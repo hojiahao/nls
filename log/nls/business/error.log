@@ -35,3 +35,78 @@ ERROR in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1035336513 - maxFileSi
 	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:197)
 	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
 	... 24 common frames omitted
+2025-03-05 12:03:33.235 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.business.mapper.DemoMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.business.mapper.DemoMapper' in your configuration.
+
+2025-03-05 12:04:21.304 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.business.mapper.DemoMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.business.mapper.DemoMapper' in your configuration.
+
+2025-03-05 12:04:36.051 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.business.mapper.DemoMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.business.mapper.DemoMapper' in your configuration.
+
+2025-03-05 12:04:58.862 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.business.mapper.DemoMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.business.mapper.DemoMapper' in your configuration.
+
+2025-03-05 12:05:00.504 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.business.mapper.DemoMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.business.mapper.DemoMapper' in your configuration.
+
