@@ -110,3 +110,33 @@ Action:
 
 Consider defining a bean of type 'cn.edu.szu.business.mapper.DemoMapper' in your configuration.
 
+2025-03-05 12:21:29.113 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.nls.business.service.DemoService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.nls.business.service.DemoService' in your configuration.
+
+2025-03-05 12:22:14.640 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.nls.business.service.DemoService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.nls.business.service.DemoService' in your configuration.
+

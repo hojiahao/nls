@@ -1,6 +1,6 @@
 package cn.edu.szu.nls.business.service;
 
-import cn.edu.szu.nls.business.mapper.DemoMapper;
+import cn.edu.szu.nls.business.mapper.custom.CustomizedDemoMapper;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 public class DemoService {
 
     @Resource
-    private DemoMapper demoMapper;
+    private CustomizedDemoMapper customizedDemoMapper;
 
     public int count() {
-       return demoMapper.count();
+       return customizedDemoMapper.count();
     }
 }
