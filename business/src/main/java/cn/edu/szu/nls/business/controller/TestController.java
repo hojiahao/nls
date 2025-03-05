@@ -2,6 +2,7 @@ package cn.edu.szu.nls.business.controller;
 
 import cn.edu.szu.nls.business.domain.Demo;
 import cn.edu.szu.nls.business.request.DemoQueryRequest;
+import cn.edu.szu.nls.business.response.CommonResponse;
 import cn.edu.szu.nls.business.service.DemoService;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,17 +17,18 @@ public class TestController {
     private DemoService demoService;
 
     @GetMapping("/hello")
-    public String hello() {
-        return "hello world!";
+    public CommonResponse<String> hello() {
+        return new CommonResponse<>("hello world!");
     }
 
     @GetMapping("/count")
-    public int count() {
-        return demoService.count();
+    public CommonResponse<Integer> count() {
+        return new CommonResponse<>(demoService.count());
     }
 
     @GetMapping("/query")
-    public List<Demo> query(DemoQueryRequest request) {
-        return demoService.query(request);
+    public CommonResponse<List<Demo>> query(DemoQueryRequest request) {
+        List<Demo> list = demoService.query(request);
+        return new CommonResponse<>(list);
     }
 }
