@@ -76,9 +76,14 @@
 </template>
 <script setup>
 import { ref } from 'vue';
+import axios from "axios";
 const selectedKeys1 = ref(['2']);
 const selectedKeys2 = ref(['1']);
 const openKeys = ref(['sub1']);
+
+axios.get("http://localhost:8080/nls/query", {mobile: "1"}).then((response) => {
+  console.log(response);
+})
 </script>
 <style scoped>
 .logo {
