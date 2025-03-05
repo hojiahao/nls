@@ -5101,3 +5101,51 @@ Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionExcep
 2025-03-05 20:35:44.520 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897264766608441344[0;39m <==      Total: 1
 2025-03-05 20:35:44.521 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897264766608441344[0;39m Request Result: {"content":[{"id":1,"mobile":"1"}],"success":true}
 2025-03-05 20:35:44.523 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897264766608441344[0;39m ------------ Around Method finished, Total Time: 29 ms ------------
+2025-03-05 20:41:22.683 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897266185088499712[0;39m ------------ Around method invoked ------------
+2025-03-05 20:41:22.685 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897266185088499712[0;39m Request Address: /nls/query GET
+2025-03-05 20:41:22.686 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897266185088499712[0;39m Class And Function: cn.edu.szu.nls.business.controller.TestController.query
+2025-03-05 20:41:22.686 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897266185088499712[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-05 20:41:22.686 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897266185088499712[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-05 20:41:22.692 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266185088499712[0;39m ==>  Preparing: select id, mobile, `password` from demo WHERE ( mobile = ? ) order by id desc
+2025-03-05 20:41:22.694 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266185088499712[0;39m ==> Parameters: 1(String)
+2025-03-05 20:41:22.706 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897266185088499712[0;39m <==    Columns: id, mobile, password
+2025-03-05 20:41:22.707 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897266185088499712[0;39m <==        Row: 1, 1, 2
+2025-03-05 20:41:22.708 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266185088499712[0;39m <==      Total: 1
+2025-03-05 20:41:22.710 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897266185088499712[0;39m Request Result: {"content":[{"id":1,"mobile":"1"}],"success":true}
+2025-03-05 20:41:22.711 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897266185088499712[0;39m ------------ Around Method finished, Total Time: 26 ms ------------
+2025-03-05 20:41:36.766 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897266244156882944[0;39m ------------ Around method invoked ------------
+2025-03-05 20:41:36.766 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897266244156882944[0;39m Request Address: /nls/query GET
+2025-03-05 20:41:36.766 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897266244156882944[0;39m Class And Function: cn.edu.szu.nls.business.controller.TestController.query
+2025-03-05 20:41:36.767 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897266244156882944[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-05 20:41:36.767 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897266244156882944[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-05 20:41:36.771 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266244156882944[0;39m ==>  Preparing: select id, mobile, `password` from demo WHERE ( mobile = ? ) order by id desc
+2025-03-05 20:41:36.772 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266244156882944[0;39m ==> Parameters: 2(String)
+2025-03-05 20:41:36.775 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897266244156882944[0;39m <==    Columns: id, mobile, password
+2025-03-05 20:41:36.776 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897266244156882944[0;39m <==        Row: 2, 2, 2
+2025-03-05 20:41:36.776 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266244156882944[0;39m <==      Total: 1
+2025-03-05 20:41:36.777 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897266244156882944[0;39m Request Result: {"content":[{"id":2,"mobile":"2"}],"success":true}
+2025-03-05 20:41:36.778 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897266244156882944[0;39m ------------ Around Method finished, Total Time: 12 ms ------------
+2025-03-05 20:44:01.036 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897266849269121024[0;39m ------------ Around method invoked ------------
+2025-03-05 20:44:01.037 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897266849269121024[0;39m Request Address: /nls/query GET
+2025-03-05 20:44:01.037 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897266849269121024[0;39m Class And Function: cn.edu.szu.nls.business.controller.TestController.query
+2025-03-05 20:44:01.037 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897266849269121024[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-05 20:44:01.037 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897266849269121024[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-05 20:44:01.042 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266849269121024[0;39m ==>  Preparing: select id, mobile, `password` from demo WHERE ( mobile = ? ) order by id desc
+2025-03-05 20:44:01.043 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266849269121024[0;39m ==> Parameters: 2(String)
+2025-03-05 20:44:01.048 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897266849269121024[0;39m <==    Columns: id, mobile, password
+2025-03-05 20:44:01.049 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897266849269121024[0;39m <==        Row: 2, 2, 2
+2025-03-05 20:44:01.050 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266849269121024[0;39m <==      Total: 1
+2025-03-05 20:44:01.051 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897266849269121024[0;39m Request Result: {"content":[{"id":2,"mobile":"2"}],"success":true}
+2025-03-05 20:44:01.052 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897266849269121024[0;39m ------------ Around Method finished, Total Time: 15 ms ------------
+2025-03-05 20:44:15.443 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897266909696458752[0;39m ------------ Around method invoked ------------
+2025-03-05 20:44:15.444 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897266909696458752[0;39m Request Address: /nls/query GET
+2025-03-05 20:44:15.444 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897266909696458752[0;39m Class And Function: cn.edu.szu.nls.business.controller.TestController.query
+2025-03-05 20:44:15.444 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897266909696458752[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-05 20:44:15.445 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897266909696458752[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-05 20:44:15.449 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266909696458752[0;39m ==>  Preparing: select id, mobile, `password` from demo WHERE ( mobile = ? ) order by id desc
+2025-03-05 20:44:15.450 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266909696458752[0;39m ==> Parameters: 2(String)
+2025-03-05 20:44:15.454 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897266909696458752[0;39m <==    Columns: id, mobile, password
+2025-03-05 20:44:15.455 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897266909696458752[0;39m <==        Row: 2, 2, 2
+2025-03-05 20:44:15.456 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897266909696458752[0;39m <==      Total: 1
+2025-03-05 20:44:15.457 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897266909696458752[0;39m Request Result: {"content":[{"id":2,"mobile":"2"}],"success":true}
+2025-03-05 20:44:15.458 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897266909696458752[0;39m ------------ Around Method finished, Total Time: 14 ms ------------
