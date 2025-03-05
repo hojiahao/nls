@@ -9,7 +9,6 @@ const count = ref(0)
 </script>
 
 <template>
-  11111111111
   <h1>{{ msg }}</h1>
 
   <div class="card">
