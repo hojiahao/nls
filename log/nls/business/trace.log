@@ -872,3 +872,98 @@ Action:
 
 Consider defining a bean of type 'cn.edu.szu.nls.business.service.DemoService' in your configuration.
 
+2025-03-05 14:19:15.867 INFO  cn.edu.szu.nls.business.BusinessApplication       :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 11612 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-05 14:19:15.867 INFO  cn.edu.szu.nls.business.BusinessApplication       :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-05 14:19:16.069 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-05 14:19:16.070 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:19:16.070 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-05 14:19:16.070 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-05 14:19:16.091 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-05 14:19:16.091 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 223 ms
+2025-03-05 14:19:16.409 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-05 14:19:16.417 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:19:16.420 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-05 14:19:16.424 INFO  cn.edu.szu.nls.business.BusinessApplication       :59   [32m                  [0;39m Started BusinessApplication in 0.582 seconds (process running for 7379.648)
+2025-03-05 14:19:16.425 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-05 14:19:16.425 INFO  cn.edu.szu.nls.business.BusinessApplication       :16   [32m                  [0;39m 启动成功！
+2025-03-05 14:19:16.426 INFO  cn.edu.szu.nls.business.BusinessApplication       :17   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-05 14:22:08.290 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-05 14:22:08.291 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-05 14:22:08.292 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:22:08.427 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-05 14:22:08.428 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:22:08.501 INFO  cn.edu.szu.nls.business.BusinessApplication       :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 11612 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-05 14:22:08.501 INFO  cn.edu.szu.nls.business.BusinessApplication       :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-05 14:22:08.779 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-05 14:22:08.780 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:22:08.781 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-05 14:22:08.781 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-05 14:22:08.803 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-05 14:22:08.803 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 299 ms
+2025-03-05 14:22:09.204 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-05 14:22:09.213 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:22:09.219 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-05 14:22:09.223 INFO  cn.edu.szu.nls.business.BusinessApplication       :59   [32m                  [0;39m Started BusinessApplication in 0.754 seconds (process running for 7552.448)
+2025-03-05 14:22:09.224 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-05 14:22:09.225 INFO  cn.edu.szu.nls.business.BusinessApplication       :16   [32m                  [0;39m 启动成功！
+2025-03-05 14:22:09.225 INFO  cn.edu.szu.nls.business.BusinessApplication       :17   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-05 14:22:48.972 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2025-03-05 14:22:48.973 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-05 14:22:48.973 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:22:49.134 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-05 14:22:49.135 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:22:49.231 INFO  cn.edu.szu.nls.business.BusinessApplication       :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 11612 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-05 14:22:49.232 INFO  cn.edu.szu.nls.business.BusinessApplication       :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-05 14:22:49.449 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-05 14:22:49.450 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:22:49.450 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-05 14:22:49.450 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-05 14:22:49.475 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-05 14:22:49.475 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 242 ms
+2025-03-05 14:22:49.753 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-05 14:22:49.759 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:22:49.763 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-05 14:22:49.767 INFO  cn.edu.szu.nls.business.BusinessApplication       :59   [32m                  [0;39m Started BusinessApplication in 0.568 seconds (process running for 7592.991)
+2025-03-05 14:22:49.768 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-05 14:22:49.768 INFO  cn.edu.szu.nls.business.BusinessApplication       :16   [32m                  [0;39m 启动成功！
+2025-03-05 14:22:49.768 INFO  cn.edu.szu.nls.business.BusinessApplication       :17   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-05 14:25:17.393 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-05 14:25:17.394 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-05 14:25:17.394 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:25:17.543 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-05 14:25:17.543 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:25:17.651 INFO  cn.edu.szu.nls.business.BusinessApplication       :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 11612 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-05 14:25:17.652 INFO  cn.edu.szu.nls.business.BusinessApplication       :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-05 14:25:17.915 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-05 14:25:17.916 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:25:17.916 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-05 14:25:17.916 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-05 14:25:17.938 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-05 14:25:17.938 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 284 ms
+2025-03-05 14:25:18.258 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-05 14:25:18.273 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:25:18.281 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-05 14:25:18.286 INFO  cn.edu.szu.nls.business.BusinessApplication       :59   [32m                  [0;39m Started BusinessApplication in 0.676 seconds (process running for 7741.51)
+2025-03-05 14:25:18.289 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-05 14:25:18.290 INFO  cn.edu.szu.nls.business.BusinessApplication       :16   [32m                  [0;39m 启动成功！
+2025-03-05 14:25:18.290 INFO  cn.edu.szu.nls.business.BusinessApplication       :17   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-05 14:26:14.111 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2025-03-05 14:26:14.112 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-05 14:26:14.112 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:26:14.237 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-05 14:26:14.237 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:26:14.307 INFO  cn.edu.szu.nls.business.BusinessApplication       :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 11612 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-05 14:26:14.308 INFO  cn.edu.szu.nls.business.BusinessApplication       :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-05 14:26:14.505 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-05 14:26:14.505 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:26:14.505 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-05 14:26:14.506 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-05 14:26:14.526 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-05 14:26:14.526 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 217 ms
+2025-03-05 14:26:14.805 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-05 14:26:14.811 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-05 14:26:14.815 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-05 14:26:14.819 INFO  cn.edu.szu.nls.business.BusinessApplication       :59   [32m                  [0;39m Started BusinessApplication in 0.535 seconds (process running for 7798.043)
+2025-03-05 14:26:14.820 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-05 14:26:14.821 INFO  cn.edu.szu.nls.business.BusinessApplication       :16   [32m                  [0;39m 启动成功！
+2025-03-05 14:26:14.821 INFO  cn.edu.szu.nls.business.BusinessApplication       :17   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
