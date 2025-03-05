@@ -29,9 +29,9 @@ import {message} from "ant-design-vue";
 
 const resp = ref()
 
-axios.get("http://localhost:8080/nls/query", {
+axios.get("/nls/query", {
   params: {
-    mobile: "2"
+    mobile: "1"
   }
 }).then((response) => {
   let data = response.data;

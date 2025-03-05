@@ -12,8 +12,8 @@ app.use(Antd).use(router).mount('#app')
 
 // 全局使用图标
 const icons = Icons
-for (const icon of icons) {
-    app.component(icon.name, icon)
+for (const i in icons) {
+    app.component(i, icons[i])
 }
 
 /**
@@ -33,3 +33,6 @@ axios.interceptors.response.use((response) => {
     console.log("返回错误：", error)
     return Promise.reject(error)
 })
+
+console.log("服务端：", import.meta.env.VITE_SERVER)
+axios.defaults.baseURL = import.meta.env.VITE_SERVER
