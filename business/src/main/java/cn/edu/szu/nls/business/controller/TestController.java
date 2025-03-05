@@ -1,6 +1,6 @@
-package cn.edu.szu.business.controller;
+package cn.edu.szu.nls.business.controller;
 
-import cn.edu.szu.business.service.DemoService;
+import cn.edu.szu.nls.business.service.DemoService;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

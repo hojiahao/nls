@@ -1,4 +1,4 @@
-package cn.edu.szu.business;
+package cn.edu.szu.nls.business;
 
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
@@ -8,7 +8,7 @@ import org.springframework.core.env.ConfigurableEnvironment;
 
 @SpringBootApplication
 @Slf4j
-@MapperScan("cn.edu.szu.business.mapper")
+@MapperScan("cn.edu.szu.nls.business.mapper")
 public class BusinessApplication {
 
     public static void main(String[] args) {
