@@ -4829,3 +4829,8 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 2025-03-05 15:47:51.987 DEBUG c.e.s.n.b.mapper.custom.CustomizedDemoMapper.count:135  [32m1897192320438005760[0;39m <==      Total: 1
 2025-03-05 15:47:51.987 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897192320438005760[0;39m Request Result: {"content":2,"success":true}
 2025-03-05 15:47:51.988 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897192320438005760[0;39m ------------ Around Method finished, Total Time: 9 ms ------------
+2025-03-05 17:03:42.920 WARN  com.zaxxer.hikari.pool.HikariPool                 :797  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m21s821ms50µs500ns).
+2025-03-05 17:48:03.095 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-05 17:48:03.292 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-05 17:48:03.365 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2025-03-05 17:48:03.394 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-1 - Shutdown completed.
