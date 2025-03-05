@@ -27,7 +27,9 @@ import TheSider from "../components/the-sider.vue";
 const selectedKeys2 = ref(['1']);
 const openKeys = ref(['sub1']);
 
-axios.get("http://localhost:8080/nls/query", {mobile: "1"}).then((response) => {
+axios.get("http://localhost:8080/nls/query", {params:{
+  mobile: "1"
+  }}).then((response) => {
   console.log(response);
 })
 </script>
