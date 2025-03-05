@@ -33,7 +33,7 @@
           </a-form-item>
 
           <a-form-item class="form-item">
-            <a-button type="primary" block html-type="submit" class="login-btn" size="large">Submit</a-button>
+            <a-button type="primary" block html-type="submit" class="login-btn" size="large">登&nbsp;录</a-button>
           </a-form-item>
         </a-form>
         <p class="footer">

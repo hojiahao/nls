@@ -1,20 +1,20 @@
 <template>
-  <div class="login">
+  <div class="register">
     <a-row>
       <a-col class="main" :span="6" :offset="9">
         <div class="title">NLS智能语音识别</div>
         <a-form
-            :model="loginMember"
+            :model="registerMember"
             name="basic"
             :wrapper-col="{ span: 24 }"
             autocomplete="off"
-            @finish="login"
+            @finish="register"
         >
           <a-form-item
               name="mobile" class="form-item"
               :rules="[{ required: true, message: 'Please input your mobile!' }]"
           >
-            <a-input v-model:value="loginMember.mobile" placeholder="手机号" size="large">
+            <a-input v-model:value="registerMember.mobile" placeholder="手机号" size="large">
               <template #prefix>
                 <MobileOutlined style="margin-left: 15px"/>
               </template>
@@ -25,7 +25,7 @@
               name="password" class="form-item"
               :rules="[{ required: true, message: 'Please input your password!' }]"
           >
-            <a-input-password v-model:value="loginMember.password" placeholder="密码" size="large">
+            <a-input-password v-model:value="registerMember.password" placeholder="密码" size="large">
               <template #prefix>
                 <LockOutlined style="margin-left: 15px"/>
               </template>
@@ -33,12 +33,11 @@
           </a-form-item>
 
           <a-form-item class="form-item">
-            <a-button type="primary" block html-type="submit" class="login-btn" size="large">Submit</a-button>
+            <a-button type="primary" block html-type="submit" class="register-btn" size="large">注&nbsp;册</a-button>
           </a-form-item>
         </a-form>
         <p class="footer">
-          <router-link to="/register">我要注册</router-link>
-          <router-link class="pull-right" to="/reset">忘记密码</router-link>
+          <router-link to="/login">返回登录</router-link>
         </p>
       </a-col>
     </a-row>
@@ -47,11 +46,11 @@
 <script setup>
 import {ref} from 'vue';
 
-const loginMember = ref({
+const registerMember = ref({
   mobile: '',
   password: ''
 });
-const login = values => {
-  console.log('开始登录:', values);
+const register = values => {
+  console.log('开始注册:', values);
 };
 </script>
