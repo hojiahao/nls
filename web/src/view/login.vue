@@ -1,50 +1,57 @@
 <template>
-  <a-form
-      :model="formState"
-      name="basic"
-      :label-col="{ span: 8 }"
-      :wrapper-col="{ span: 16 }"
-      autocomplete="off"
-      @finish="onFinish"
-      @finishFailed="onFinishFailed"
-  >
-    <a-form-item
-        label="Username"
-        name="username"
-        :rules="[{ required: true, message: 'Please input your username!' }]"
-    >
-      <a-input v-model:value="formState.username"/>
-    </a-form-item>
+  <div class="login">
+    <a-row>
+      <a-col class="main" :span="6" :offset="9">
+        <div class="title">NLS智能语音识别</div>
+        <a-form
+            :model="loginMember"
+            name="basic"
+            :wrapper-col="{ span: 24 }"
+            autocomplete="off"
+            @finish="login"
+        >
+          <a-form-item
+              name="mobile" class="form-item"
+              :rules="[{ required: true, message: 'Please input your mobile!' }]"
+          >
+            <a-input v-model:value="loginMember.mobile" placeholder="手机号" size="large">
+              <template #prefix>
+                <MobileOutlined style="margin-left: 15px"/>
+              </template>
+            </a-input>
+          </a-form-item>
 
-    <a-form-item
-        label="Password"
-        name="password"
-        :rules="[{ required: true, message: 'Please input your password!' }]"
-    >
-      <a-input-password v-model:value="formState.password"/>
-    </a-form-item>
+          <a-form-item
+              name="password" class="form-item"
+              :rules="[{ required: true, message: 'Please input your password!' }]"
+          >
+            <a-input-password v-model:value="loginMember.password" type="password">
+              <template #prefix>
+                <LockOutlined style="margin-left: 15px"/>
+              </template>
+            </a-input-password>
+          </a-form-item>
 
-    <a-form-item name="remember" :wrapper-col="{ offset: 8, span: 16 }">
-      <a-checkbox v-model:checked="formState.remember">Remember me</a-checkbox>
-    </a-form-item>
-
-    <a-form-item :wrapper-col="{ offset: 8, span: 16 }">
-      <a-button type="primary" html-type="submit">Submit</a-button>
-    </a-form-item>
-  </a-form>
+          <a-form-item class="form-item">
+            <a-button type="primary" block html-type="submit" class="login-btn" size="large">Submit</a-button>
+          </a-form-item>
+        </a-form>
+        <p class="footer">
+          <router-link to="/register">我要注册</router-link>
+          <router-link class="pull-right" to="/reset">忘记密码</router-link>
+        </p>
+      </a-col>
+    </a-row>
+  </div>
 </template>
 <script setup>
-import {reactive} from 'vue';
+import {ref} from 'vue';
 
-const formState = reactive({
-  username: '',
-  password: '',
-  remember: true,
+const loginMember = ref({
+  mobile: '',
+  password: ''
 });
-const onFinish = values => {
-  console.log('Success:', values);
-};
-const onFinishFailed = errorInfo => {
-  console.log('Failed:', errorInfo);
+const login = values => {
+  console.log('开始登录:', values);
 };
 </script>
