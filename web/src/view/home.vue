@@ -12,26 +12,38 @@
         <a-layout-content
             :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
         >
-          Content
+          Content {{resp}}
+          <a-input v-model:value="resp" @change="onchange" placeholder="Basic usage" />
         </a-layout-content>
       </a-layout>
     </a-layout>
   </a-layout>
 </template>
 <script setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
 import axios from "axios";
 import TheHeader from "../components/the-header.vue";
 import TheSider from "../components/the-sider.vue";
+import {message} from "ant-design-vue";
 
-const selectedKeys2 = ref(['1']);
-const openKeys = ref(['sub1']);
+const resp = ref()
 
-axios.get("http://localhost:8080/nls/query", {params:{
-  mobile: "1"
-  }}).then((response) => {
-  console.log(response);
+axios.get("http://localhost:8080/nls/query", {
+  params: {
+    mobile: "2"
+  }
+}).then((response) => {
+  let data = response.data;
+  if (data.success) {
+    resp.value = data.content;
+  } else {
+    message.error(data.msg);
+  }
 })
+
+const onchange = () => {
+  console.log(resp.value);
+}
 </script>
 <style scoped>
 .logo {

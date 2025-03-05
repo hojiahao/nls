@@ -5089,3 +5089,15 @@ Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionExcep
 2025-03-05 20:28:57.237 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897263052237012992[0;39m <==      Total: 1
 2025-03-05 20:28:57.299 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897263052237012992[0;39m Request Result: {"content":[{"id":1,"mobile":"1"}],"success":true}
 2025-03-05 20:28:57.299 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897263052237012992[0;39m ------------ Around Method finished, Total Time: 1543 ms ------------
+2025-03-05 20:35:44.491 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897264766608441344[0;39m ------------ Around method invoked ------------
+2025-03-05 20:35:44.493 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897264766608441344[0;39m Request Address: /nls/query GET
+2025-03-05 20:35:44.493 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897264766608441344[0;39m Class And Function: cn.edu.szu.nls.business.controller.TestController.query
+2025-03-05 20:35:44.493 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897264766608441344[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-05 20:35:44.495 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897264766608441344[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-05 20:35:44.503 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897264766608441344[0;39m ==>  Preparing: select id, mobile, `password` from demo WHERE ( mobile = ? ) order by id desc
+2025-03-05 20:35:44.505 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897264766608441344[0;39m ==> Parameters: 1(String)
+2025-03-05 20:35:44.518 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897264766608441344[0;39m <==    Columns: id, mobile, password
+2025-03-05 20:35:44.519 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897264766608441344[0;39m <==        Row: 1, 1, 2
+2025-03-05 20:35:44.520 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897264766608441344[0;39m <==      Total: 1
+2025-03-05 20:35:44.521 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897264766608441344[0;39m Request Result: {"content":[{"id":1,"mobile":"1"}],"success":true}
+2025-03-05 20:35:44.523 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897264766608441344[0;39m ------------ Around Method finished, Total Time: 29 ms ------------
