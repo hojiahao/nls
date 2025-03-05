@@ -1756,3 +1756,6 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-03-05 15:41:43.982 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :56   [32m                  [0;39m 校验异常：手机号不能为空！
+2025-03-05 15:45:50.273 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :56   [32m                  [0;39m 校验异常：手机号不能为空！
+2025-03-05 15:47:25.908 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :56   [32m                  [0;39m 校验异常：手机号不能为空！
