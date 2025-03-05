@@ -5069,3 +5069,23 @@ Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionExcep
 2025-03-05 20:24:31.455 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 3.057 seconds (process running for 3.763)
 2025-03-05 20:24:31.458 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
 2025-03-05 20:24:31.459 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-05 20:27:22.856 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-05 20:27:22.857 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2025-03-05 20:27:22.860 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2025-03-05 20:27:23.077 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :56   [32m                  [0;39m 校验异常：手机号不能为空！
+2025-03-05 20:27:23.178 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public cn.edu.szu.nls.business.response.CommonResponse<java.util.List<cn.edu.szu.nls.business.response.DemoQueryResponse>> cn.edu.szu.nls.business.controller.TestController.query(cn.edu.szu.nls.business.request.DemoQueryRequest): [Field error in object 'demoQueryRequest' on field 'mobile': rejected value [null]; codes [NotBlank.demoQueryRequest.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [demoQueryRequest.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空！]] ]
+2025-03-05 20:28:55.755 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897263052237012992[0;39m ------------ Around method invoked ------------
+2025-03-05 20:28:55.759 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897263052237012992[0;39m Request Address: /nls/query GET
+2025-03-05 20:28:55.761 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897263052237012992[0;39m Class And Function: cn.edu.szu.nls.business.controller.TestController.query
+2025-03-05 20:28:55.761 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897263052237012992[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-05 20:28:56.154 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897263052237012992[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-05 20:28:56.259 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1897263052237012992[0;39m HikariPool-1 - Starting...
+2025-03-05 20:28:57.095 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1897263052237012992[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48675620
+2025-03-05 20:28:57.097 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1897263052237012992[0;39m HikariPool-1 - Start completed.
+2025-03-05 20:28:57.107 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897263052237012992[0;39m ==>  Preparing: select id, mobile, `password` from demo WHERE ( mobile = ? ) order by id desc
+2025-03-05 20:28:57.134 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897263052237012992[0;39m ==> Parameters: 1(String)
+2025-03-05 20:28:57.232 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897263052237012992[0;39m <==    Columns: id, mobile, password
+2025-03-05 20:28:57.234 TRACE c.e.s.n.business.mapper.DemoMapper.selectByExample:141  [32m1897263052237012992[0;39m <==        Row: 1, 1, 2
+2025-03-05 20:28:57.237 DEBUG c.e.s.n.business.mapper.DemoMapper.selectByExample:135  [32m1897263052237012992[0;39m <==      Total: 1
+2025-03-05 20:28:57.299 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897263052237012992[0;39m Request Result: {"content":[{"id":1,"mobile":"1"}],"success":true}
+2025-03-05 20:28:57.299 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897263052237012992[0;39m ------------ Around Method finished, Total Time: 1543 ms ------------
