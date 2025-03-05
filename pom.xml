@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>business</module>
+        <module>generator</module>
     </modules>
     <groupId>cn.edu.szu</groupId>
     <artifactId>nls</artifactId>
