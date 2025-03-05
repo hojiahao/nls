@@ -40,6 +40,10 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
         <!-- 集成mybatis -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>

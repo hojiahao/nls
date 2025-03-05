@@ -1,8 +1,8 @@
 package cn.edu.szu.nls.business.controller;
 
-import cn.edu.szu.nls.business.domain.Demo;
 import cn.edu.szu.nls.business.request.DemoQueryRequest;
 import cn.edu.szu.nls.business.response.CommonResponse;
+import cn.edu.szu.nls.business.response.DemoQueryResponse;
 import cn.edu.szu.nls.business.service.DemoService;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,8 +27,8 @@ public class TestController {
     }
 
     @GetMapping("/query")
-    public CommonResponse<List<Demo>> query(DemoQueryRequest request) {
-        List<Demo> list = demoService.query(request);
+    public CommonResponse<List<DemoQueryResponse>> query(DemoQueryRequest request) {
+        List<DemoQueryResponse> list = demoService.query(request);
         return new CommonResponse<>(list);
     }
 }

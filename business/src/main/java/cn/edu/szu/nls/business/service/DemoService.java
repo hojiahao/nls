@@ -5,6 +5,8 @@ import cn.edu.szu.nls.business.domain.DemoExample;
 import cn.edu.szu.nls.business.mapper.DemoMapper;
 import cn.edu.szu.nls.business.mapper.custom.CustomizedDemoMapper;
 import cn.edu.szu.nls.business.request.DemoQueryRequest;
+import cn.edu.szu.nls.business.response.DemoQueryResponse;
+import cn.hutool.core.bean.BeanUtil;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +26,7 @@ public class DemoService {
         // return Math.toIntExact(demoMapper.countByExample(null));
     }
 
-    public List<Demo> query(DemoQueryRequest request) {
+    public List<DemoQueryResponse> query(DemoQueryRequest request) {
         String mobile = request.getMobile();
         DemoExample demoExample = new DemoExample();
         demoExample.setOrderByClause("id desc");
@@ -32,6 +34,7 @@ public class DemoService {
         if (mobile != null) {
             criteria.andMobileEqualTo(mobile);
         }
-        return demoMapper.selectByExample(demoExample);
+        List<Demo> list = demoMapper.selectByExample(demoExample);
+        return BeanUtil.copyToList(list, DemoQueryResponse.class);
     }
 }
