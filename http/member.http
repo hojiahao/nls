@@ -1,0 +1,10 @@
+POST http://localhost:8080/nls/web/member/register
+Content-Type: application/json
+
+{
+  "mobile": "15794926554",
+  "password": "qwerasd08275879",
+  "code": "926554"
+}
+
+###

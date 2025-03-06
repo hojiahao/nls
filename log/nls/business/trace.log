@@ -3071,3 +3071,736 @@ Caused by: java.lang.ClassNotFoundException: cn.edu.szu.nls.business.service.Sms
 2025-03-06 15:40:59.646 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
 2025-03-06 15:41:04.859 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
 2025-03-06 15:41:05.426 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:41:08.663 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.2.Final
+2025-03-06 15:41:08.713 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:41:08.714 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:41:08.763 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-06 15:41:08.764 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-06 15:41:10.234 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:41:10.248 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:41:10.249 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:41:10.249 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:41:10.304 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:41:10.305 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1541 ms
+2025-03-06 15:41:11.175 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:41:11.194 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:41:11.214 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:41:11.223 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 2.979 seconds (process running for 3.721)
+2025-03-06 15:41:11.227 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:41:11.227 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:41:31.912 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-06 15:41:31.912 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2025-03-06 15:41:31.913 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2025-03-06 15:41:31.953 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :26   [32m                  [0;39m 系统异常：
+org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:236)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:176)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-03-06 15:41:31.993 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m                  [0;39m Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2025-03-06 15:41:42.008 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897553156539371520[0;39m ------------ Around method invoked ------------
+2025-03-06 15:41:42.011 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897553156539371520[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 15:41:42.011 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897553156539371520[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 15:41:42.011 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897553156539371520[0;39m Remote Address: 127.0.0.1
+2025-03-06 15:41:42.145 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897553156539371520[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 15:41:42.206 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1897553156539371520[0;39m HikariPool-1 - Starting...
+2025-03-06 15:41:42.547 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1897553156539371520[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eee70c5
+2025-03-06 15:41:42.549 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1897553156539371520[0;39m HikariPool-1 - Start completed.
+2025-03-06 15:41:42.558 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897553156539371520[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 15:41:42.581 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897553156539371520[0;39m ==> Parameters: 15074787523(String)
+2025-03-06 15:41:42.624 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897553156539371520[0;39m <==      Total: 0
+2025-03-06 15:41:42.641 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :50   [32m1897553156539371520[0;39m 当前时间：Thu Mar 06 15:41:42 CST 2025
+2025-03-06 15:41:42.642 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :51   [32m1897553156539371520[0;39m 1分钟以前：2025-03-06 15:40:42
+2025-03-06 15:41:42.644 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897553156539371520[0;39m ==>  Preparing: select count(*) from sms_code WHERE ( `use` = ? and mobile = ? and created_at > ? )
+2025-03-06 15:41:42.644 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897553156539371520[0;39m ==> Parameters: 0(String), 15074787523(String), 2025-03-06 15:40:42.635(Timestamp)
+2025-03-06 15:41:42.650 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897553156539371520[0;39m <==    Columns: count(*)
+2025-03-06 15:41:42.650 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897553156539371520[0;39m <==        Row: 0
+2025-03-06 15:41:42.651 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897553156539371520[0;39m <==      Total: 1
+2025-03-06 15:41:42.652 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897553156539371520[0;39m ==>  Preparing: insert into sms_code (id, mobile, code, `use`, `status`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?)
+2025-03-06 15:41:42.655 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897553156539371520[0;39m ==> Parameters: 1897553159236308992(Long), 15074787523(String), 206522(String), 0(String), 0(String), 2025-03-06 15:41:42.633(Timestamp), 2025-03-06 15:41:42.633(Timestamp)
+2025-03-06 15:41:42.661 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897553156539371520[0;39m <==    Updates: 1
+2025-03-06 15:41:42.662 INFO  cn.edu.szu.nls.business.util.SmsUtil              :61   [32m1897553156539371520[0;39m 发送验证码手机号：15074787523，验证码：206522，签名：阿里云短信测试，模板：SMS_154950909
+2025-03-06 15:41:43.488 INFO  cn.edu.szu.nls.business.util.SmsUtil              :98   [32m1897553156539371520[0;39m 短信发送结果：{"body":{"bizId":"824302041246901642^0","code":"OK","message":"OK","requestId":"79212032-B8F9-5A1E-B8AE-814D1D821E70"},"headers":{"Keep-Alive":"timeout=25","Access-Control-Expose-Headers":"*","Access-Control-Allow-Origin":"*","ETag":"15eNv51/Qo9jef3IM4eF5jg0","x-acs-request-id":"79212032-B8F9-5A1E-B8AE-814D1D821E70","Connection":"keep-alive","Content-Length":"110","Date":"Thu, 06 Mar 2025 07:41:41 GMT","Content-Type":"application/json;charset=utf-8","x-acs-trace-id":"25f1373387f208371f7fab10317e0a15"},"statusCode":200}
+2025-03-06 15:41:43.541 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897553156539371520[0;39m Request Result: {"success":true}
+2025-03-06 15:41:43.541 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897553156539371520[0;39m ------------ Around Method finished, Total Time: 1531 ms ------------
+2025-03-06 15:43:38.843 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897553646580879360[0;39m ------------ Around method invoked ------------
+2025-03-06 15:43:38.844 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897553646580879360[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 15:43:38.844 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897553646580879360[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 15:43:38.844 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897553646580879360[0;39m Remote Address: 127.0.0.1
+2025-03-06 15:43:38.845 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897553646580879360[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 15:43:38.847 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897553646580879360[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 15:43:38.848 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897553646580879360[0;39m ==> Parameters: 15074787523(String)
+2025-03-06 15:43:38.849 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897553646580879360[0;39m <==    Columns: id, mobile, password, name, created_at, updated_at
+2025-03-06 15:43:38.851 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897553646580879360[0;39m <==        Row: 1, 15074787523, Hojiahao08275879, hojiahao, 2025-03-06 15:43:12, 2025-03-06 15:43:19
+2025-03-06 15:43:38.852 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897553646580879360[0;39m <==      Total: 1
+2025-03-06 15:43:38.855 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897553646580879360[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 15:43:38.856 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897553646580879360[0;39m Resolved [BusinessException(exceptionEnum=MEMBER_MOBILE_HAD_REGISTER)]
+2025-03-06 15:50:49.901 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-06 15:50:49.907 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:50:49.909 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:50:50.544 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:50:50.544 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:50:50.548 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2025-03-06 15:50:50.564 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2025-03-06 15:50:50.639 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:50:50.639 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:50:50.965 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:50:50.966 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:50:50.966 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:50:50.966 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:50:50.998 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:50:50.998 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 357 ms
+2025-03-06 15:50:51.428 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:50:51.437 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:50:51.442 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:50:51.446 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.844 seconds (process running for 583.944)
+2025-03-06 15:50:51.448 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:50:51.448 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:50:51.448 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:50:52.854 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2025-03-06 15:50:52.856 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:50:52.856 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:50:53.439 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:50:53.439 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:50:53.501 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:50:53.501 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:50:53.720 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:50:53.722 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:50:53.722 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:50:53.722 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:50:53.745 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:50:53.745 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 243 ms
+2025-03-06 15:50:54.078 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:50:54.085 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:50:54.090 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:50:54.094 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.614 seconds (process running for 586.591)
+2025-03-06 15:50:54.094 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:50:54.095 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:50:54.095 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:51:55.356 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-06 15:51:55.358 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:51:55.358 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:51:56.055 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:51:56.056 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:51:56.151 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:51:56.151 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:51:56.452 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:51:56.452 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:51:56.452 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:51:56.452 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:51:56.480 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:51:56.480 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 326 ms
+2025-03-06 15:51:56.588 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSmsCodeController': Injection of resource dependencies failed
+2025-03-06 15:51:56.588 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:51:56.594 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:51:56.615 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.nls.business.service.MemberService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.nls.business.service.MemberService' in your configuration.
+
+2025-03-06 15:51:58.081 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:51:58.081 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:51:58.313 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:51:58.315 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:51:58.315 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:51:58.315 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:51:58.339 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:51:58.340 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 257 ms
+2025-03-06 15:51:58.651 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:51:58.658 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:51:58.663 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:51:58.666 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.61 seconds (process running for 651.164)
+2025-03-06 15:51:58.667 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:51:58.667 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:51:58.667 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:52:45.756 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-06 15:52:45.757 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:52:45.757 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:52:46.501 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:52:46.502 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:52:46.601 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:52:46.601 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:52:46.911 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:52:46.912 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:52:46.912 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:52:46.912 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:52:46.939 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:52:46.939 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 335 ms
+2025-03-06 15:52:47.359 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:52:47.367 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:52:47.372 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:52:47.375 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.814 seconds (process running for 699.873)
+2025-03-06 15:52:47.376 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:52:47.376 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:52:47.376 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:52:48.790 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-06 15:52:48.793 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:52:48.793 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:52:49.434 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:52:49.434 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:52:49.535 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:52:49.535 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:52:49.764 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:52:49.765 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:52:49.765 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:52:49.765 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:52:49.792 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:52:49.792 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 254 ms
+2025-03-06 15:52:50.175 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:52:50.182 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:52:50.187 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:52:50.191 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.691 seconds (process running for 702.689)
+2025-03-06 15:52:50.192 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:52:50.192 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:52:50.193 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:53:58.613 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-06 15:53:58.615 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:53:58.615 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:53:59.210 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:53:59.210 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:53:59.271 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:53:59.271 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:53:59.468 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:53:59.469 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:53:59.469 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:53:59.469 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:53:59.490 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:53:59.490 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 217 ms
+2025-03-06 15:53:59.562 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSmsCodeController': Injection of resource dependencies failed
+2025-03-06 15:53:59.563 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:53:59.566 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:53:59.568 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSmsCodeController': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsCodeService' defined in file [E:\Projects\nls\business\target\classes\cn\edu\szu\nls\business\service\SmsCodeService.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:462)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:606)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:577)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:272)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.service.SmsCodeService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@50cce307]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:756)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:432)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:413)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:313)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	... 36 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: cn/edu/szu/nls/business/service/MemberService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:751)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: cn.edu.szu.nls.business.service.MemberService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 46 common frames omitted
+2025-03-06 15:54:27.420 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:54:27.420 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:54:27.640 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:54:27.640 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:54:27.641 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:54:27.641 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:54:27.663 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:54:27.663 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 240 ms
+2025-03-06 15:54:27.945 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:54:27.951 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:54:27.956 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:54:27.959 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.566 seconds (process running for 800.457)
+2025-03-06 15:54:27.960 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:54:27.960 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:54:27.961 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:58:10.585 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2025-03-06 15:58:10.586 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:58:10.587 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:58:11.233 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:58:11.234 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:58:11.302 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:58:11.302 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:58:11.569 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:58:11.569 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:58:11.570 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:58:11.570 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:58:11.598 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:58:11.598 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 294 ms
+2025-03-06 15:58:11.711 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSmsCodeController': Injection of resource dependencies failed
+2025-03-06 15:58:11.711 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:58:11.717 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:58:11.720 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.nls.business.service.SmsCodeService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.nls.business.service.SmsCodeService' in your configuration.
+
+2025-03-06 15:58:13.187 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:58:13.188 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:58:13.443 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:58:13.443 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:58:13.444 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:58:13.444 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:58:13.468 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:58:13.468 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 277 ms
+2025-03-06 15:58:13.786 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:58:13.792 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:58:13.796 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:58:13.799 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.648 seconds (process running for 1026.298)
+2025-03-06 15:58:13.800 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:58:13.801 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:58:13.801 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:59:01.868 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-06 15:59:01.869 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:59:01.870 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:59:02.588 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:59:02.589 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:59:02.672 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:59:02.673 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:59:02.914 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:59:02.914 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:59:02.914 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:59:02.914 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:59:02.936 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:59:02.936 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 261 ms
+2025-03-06 15:59:03.276 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:59:03.285 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:59:03.289 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:59:03.293 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.653 seconds (process running for 1075.791)
+2025-03-06 15:59:03.294 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:59:03.295 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:59:03.295 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:59:04.707 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-06 15:59:04.708 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:59:04.709 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:59:05.231 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:59:05.231 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:59:05.299 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:59:05.299 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:59:05.500 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:59:05.501 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:59:05.501 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:59:05.501 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:59:05.521 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:59:05.521 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 221 ms
+2025-03-06 15:59:05.802 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:59:05.809 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:59:05.813 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:59:05.817 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.537 seconds (process running for 1078.314)
+2025-03-06 15:59:05.817 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:59:05.818 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:59:05.818 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 16:00:26.371 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-06 16:00:26.372 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 16:00:26.372 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:26.962 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 16:00:26.963 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:27.043 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 16:00:27.043 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 16:00:27.319 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 16:00:27.320 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:27.320 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 16:00:27.320 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 16:00:27.345 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 16:00:27.345 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 301 ms
+2025-03-06 16:00:27.680 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 16:00:27.689 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:27.694 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 16:00:27.698 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.682 seconds (process running for 1160.195)
+2025-03-06 16:00:27.699 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 16:00:27.699 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 16:00:27.699 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 16:00:29.110 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-06 16:00:29.111 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 16:00:29.111 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:29.699 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 16:00:29.699 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:29.776 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 16:00:29.776 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 16:00:29.995 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 16:00:29.995 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:29.995 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 16:00:29.995 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 16:00:30.016 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 16:00:30.017 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 239 ms
+2025-03-06 16:00:30.299 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 16:00:30.305 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:30.309 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 16:00:30.312 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.56 seconds (process running for 1162.81)
+2025-03-06 16:00:30.313 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 16:00:30.313 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 16:00:30.313 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 16:00:38.830 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-06 16:00:38.831 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 16:00:38.832 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:39.512 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 16:00:39.512 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:39.595 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 16:00:39.595 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 16:00:39.858 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 16:00:39.859 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:39.859 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 16:00:39.859 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 16:00:39.891 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 16:00:39.891 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 294 ms
+2025-03-06 16:00:40.003 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSmsCodeController': Injection of resource dependencies failed
+2025-03-06 16:00:40.004 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 16:00:40.008 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 16:00:40.011 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.nls.business.service.MemberService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.nls.business.service.MemberService' in your configuration.
+
+2025-03-06 16:00:41.479 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 16:00:41.479 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 16:00:41.732 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 16:00:41.734 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:41.734 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 16:00:41.734 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 16:00:41.758 INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 16:00:41.758 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 277 ms
+2025-03-06 16:00:42.119 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 16:00:42.125 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:42.130 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 16:00:42.133 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.686 seconds (process running for 1174.631)
+2025-03-06 16:00:42.134 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 16:00:42.134 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 16:00:42.135 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 16:00:50.654 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-06 16:00:50.656 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 16:00:50.656 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:51.424 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 16:00:51.425 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:51.492 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 16:00:51.494 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 16:00:51.730 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 16:00:51.730 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:51.732 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 16:00:51.732 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 16:00:51.756 INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 16:00:51.756 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 261 ms
+2025-03-06 16:00:52.095 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 16:00:52.102 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:52.106 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 16:00:52.110 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.639 seconds (process running for 1184.609)
+2025-03-06 16:00:52.112 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 16:00:52.112 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 16:00:52.112 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 16:00:53.523 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-06 16:00:53.524 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 16:00:53.525 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:54.123 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 16:00:54.123 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:54.197 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 16:00:54.197 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 16:00:54.410 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 16:00:54.411 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:54.411 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 16:00:54.411 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 16:00:54.437 INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 16:00:54.437 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 238 ms
+2025-03-06 16:00:54.718 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 16:00:54.724 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:00:54.729 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 16:00:54.733 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.561 seconds (process running for 1187.231)
+2025-03-06 16:00:54.734 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 16:00:54.734 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 16:00:54.734 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 16:01:23.557 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-06 16:01:23.559 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 16:01:23.560 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:01:24.242 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 16:01:24.242 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:01:24.313 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 16:01:24.313 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 16:01:24.557 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 16:01:24.558 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:01:24.558 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 16:01:24.558 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 16:01:24.581 INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 16:01:24.581 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 266 ms
+2025-03-06 16:01:24.724 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'webSmsCodeController' method 
+cn.edu.szu.nls.business.controller.web.WebSmsCodeController#sendForRegister(SmsCodeRegisterRequest)
+to {POST [/web/sms-code/send-for-register]}: There is already 'webMemberController' bean method
+cn.edu.szu.nls.business.controller.web.WebMemberController#sendForRegister(SmsCodeRegisterRequest) mapped.
+2025-03-06 16:01:24.724 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 16:01:24.728 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 16:01:24.730 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'webSmsCodeController' method 
+cn.edu.szu.nls.business.controller.web.WebSmsCodeController#sendForRegister(SmsCodeRegisterRequest)
+to {POST [/web/sms-code/send-for-register]}: There is already 'webMemberController' bean method
+cn.edu.szu.nls.business.controller.web.WebMemberController#sendForRegister(SmsCodeRegisterRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'webSmsCodeController' method 
+cn.edu.szu.nls.business.controller.web.WebSmsCodeController#sendForRegister(SmsCodeRegisterRequest)
+to {POST [/web/sms-code/send-for-register]}: There is already 'webMemberController' bean method
+cn.edu.szu.nls.business.controller.web.WebMemberController#sendForRegister(SmsCodeRegisterRequest) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:509)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 23 common frames omitted
+2025-03-06 16:01:37.377 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 16:01:37.377 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 16:01:37.632 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 16:01:37.632 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:01:37.633 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 16:01:37.633 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 16:01:37.658 INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 16:01:37.658 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 280 ms
+2025-03-06 16:01:38.036 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 16:01:38.045 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:01:38.050 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 16:01:38.053 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.699 seconds (process running for 1230.551)
+2025-03-06 16:01:38.053 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 16:01:38.053 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 16:01:38.055 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 16:02:33.229 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-06 16:02:33.230 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 16:02:33.230 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:02:33.867 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 16:02:33.868 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:02:33.937 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 16:02:33.937 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 16:02:34.185 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 16:02:34.186 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:02:34.186 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 16:02:34.186 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 16:02:34.217 INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 16:02:34.218 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 280 ms
+2025-03-06 16:02:34.564 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 16:02:34.571 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:02:34.574 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 16:02:34.578 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.662 seconds (process running for 1287.076)
+2025-03-06 16:02:34.579 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 16:02:34.579 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 16:02:34.579 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 16:04:40.048 INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-06 16:04:40.048 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2025-03-06 16:04:40.049 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2025-03-06 16:04:40.056 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897558936491610112[0;39m ------------ Around method invoked ------------
+2025-03-06 16:04:40.056 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897558936491610112[0;39m Request Address: /nls/web/member/register POST
+2025-03-06 16:04:40.056 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897558936491610112[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebMemberController.register
+2025-03-06 16:04:40.056 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897558936491610112[0;39m Remote Address: 127.0.0.1
+2025-03-06 16:04:40.057 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897558936491610112[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 16:04:40.060 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1897558936491610112[0;39m HikariPool-2 - Starting...
+2025-03-06 16:04:40.084 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1897558936491610112[0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f416347
+2025-03-06 16:04:40.084 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1897558936491610112[0;39m HikariPool-2 - Start completed.
+2025-03-06 16:04:40.084 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897558936491610112[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 16:04:40.086 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897558936491610112[0;39m ==> Parameters: 15074787523(String)
+2025-03-06 16:04:40.089 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897558936491610112[0;39m <==    Columns: id, mobile, password, name, created_at, updated_at
+2025-03-06 16:04:40.090 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897558936491610112[0;39m <==        Row: 1, 15074787523, Hojiahao08275879, hojiahao, 2025-03-06 15:43:12, 2025-03-06 15:43:19
+2025-03-06 16:04:40.090 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897558936491610112[0;39m <==      Total: 1
+2025-03-06 16:04:40.092 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897558936491610112[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 16:04:40.096 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897558936491610112[0;39m Resolved [BusinessException(exceptionEnum=MEMBER_MOBILE_HAD_REGISTER)]
+2025-03-06 16:06:07.935 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897559305082851328[0;39m ------------ Around method invoked ------------
+2025-03-06 16:06:07.935 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897559305082851328[0;39m Request Address: /nls/web/member/register POST
+2025-03-06 16:06:07.935 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897559305082851328[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebMemberController.register
+2025-03-06 16:06:07.935 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897559305082851328[0;39m Remote Address: 127.0.0.1
+2025-03-06 16:06:07.935 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897559305082851328[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 16:06:07.937 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897559305082851328[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 16:06:07.937 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897559305082851328[0;39m ==> Parameters: 15074787523(String)
+2025-03-06 16:06:07.938 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897559305082851328[0;39m <==      Total: 0
+2025-03-06 16:06:07.940 DEBUG c.edu.szu.nls.business.mapper.MemberMapper.insert :135  [32m1897559305082851328[0;39m ==>  Preparing: insert into member (id, mobile, `password`, `name`, created_at, updated_at ) values (?, ?, ?, ?, ?, ? )
+2025-03-06 16:06:07.940 DEBUG c.edu.szu.nls.business.mapper.MemberMapper.insert :135  [32m1897559305082851328[0;39m ==> Parameters: 1897559305099628544(Long), 15074787523(String), Hojiahao08275879(String), 150****7523(String), 2025-03-06 16:06:07.935(Timestamp), 2025-03-06 16:06:07.935(Timestamp)
+2025-03-06 16:06:07.950 DEBUG c.edu.szu.nls.business.mapper.MemberMapper.insert :135  [32m1897559305082851328[0;39m <==    Updates: 1
+2025-03-06 16:06:07.951 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897559305082851328[0;39m Request Result: {"success":true}
+2025-03-06 16:06:07.952 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897559305082851328[0;39m ------------ Around Method finished, Total Time: 17 ms ------------
+2025-03-06 16:11:06.343 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-06 16:11:06.344 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 16:11:06.344 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:11:06.974 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 16:11:06.975 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:11:06.977 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2025-03-06 16:11:06.999 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2025-03-06 16:11:07.086 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 12108 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 16:11:07.086 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 16:11:07.369 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 16:11:07.371 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:11:07.371 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 16:11:07.371 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 16:11:07.393 INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 16:11:07.393 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 305 ms
+2025-03-06 16:11:07.734 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 16:11:07.741 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:11:07.744 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 16:11:07.747 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.688 seconds (process running for 1800.246)
+2025-03-06 16:11:07.748 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 16:11:07.748 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 16:11:07.748 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 16:12:00.791 INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-06 16:12:00.791 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2025-03-06 16:12:00.792 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2025-03-06 16:12:00.800 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897560785105932288[0;39m ------------ Around method invoked ------------
+2025-03-06 16:12:00.801 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897560785105932288[0;39m Request Address: /nls/web/member/register POST
+2025-03-06 16:12:00.801 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897560785105932288[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebMemberController.register
+2025-03-06 16:12:00.801 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897560785105932288[0;39m Remote Address: 127.0.0.1
+2025-03-06 16:12:00.801 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897560785105932288[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 16:12:00.812 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1897560785105932288[0;39m HikariPool-3 - Starting...
+2025-03-06 16:12:00.836 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1897560785105932288[0;39m HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@376a3d2f
+2025-03-06 16:12:00.837 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1897560785105932288[0;39m HikariPool-3 - Start completed.
+2025-03-06 16:12:00.837 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897560785105932288[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 16:12:00.837 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897560785105932288[0;39m ==> Parameters: 15794926554(String)
+2025-03-06 16:12:00.840 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897560785105932288[0;39m <==      Total: 0
+2025-03-06 16:12:00.841 DEBUG c.edu.szu.nls.business.mapper.MemberMapper.insert :135  [32m1897560785105932288[0;39m ==>  Preparing: insert into member (id, mobile, `password`, `name`, created_at, updated_at ) values (?, ?, ?, ?, ?, ? )
+2025-03-06 16:12:00.842 DEBUG c.edu.szu.nls.business.mapper.MemberMapper.insert :135  [32m1897560785105932288[0;39m ==> Parameters: 1897560785273704448(Long), 15794926554(String), f6de5abe706d0bf9774814ee200cecfa(String), 157****6554(String), 2025-03-06 16:12:00.807(Timestamp), 2025-03-06 16:12:00.807(Timestamp)
+2025-03-06 16:12:00.849 DEBUG c.edu.szu.nls.business.mapper.MemberMapper.insert :135  [32m1897560785105932288[0;39m <==    Updates: 1
+2025-03-06 16:12:00.850 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897560785105932288[0;39m Request Result: {"success":true}
+2025-03-06 16:12:00.850 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897560785105932288[0;39m ------------ Around Method finished, Total Time: 50 ms ------------

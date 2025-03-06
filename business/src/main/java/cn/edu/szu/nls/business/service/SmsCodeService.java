@@ -28,8 +28,8 @@ public class SmsCodeService {
     private MemberService memberService;
 
     public void sendCodeForRegister(String mobile) {
-        Member member = memberService.selectByMobile(mobile);
-        if (member != null) {
+        Member memberDB = memberService.selectByMobile(mobile);
+        if (memberDB != null) {
             throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_HAD_REGISTER);
         }
         sendCode(mobile, SmsCodeUseEnum.REGISTER.getCode());
