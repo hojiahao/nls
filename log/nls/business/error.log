@@ -2152,3 +2152,5 @@ cn.edu.szu.nls.business.exception.BusinessException: null
 cn.edu.szu.nls.business.exception.BusinessException: null
 2025-03-06 17:19:55.294 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897577874717892608[0;39m 系统异常：
 cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 18:01:40.213 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897588381042565120[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null

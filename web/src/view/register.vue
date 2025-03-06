@@ -11,7 +11,7 @@
         >
           <a-form-item
               name="mobile" class="form-item"
-              :rules="[{ required: true, message: 'Please input your mobile!' }]"
+              :rules="[{ required: true, message: 'Please input your mobile!', trigger: 'blur' }, { pattern: /^\d{11}$/, message: '手机号为11位数字', trigger: 'blur' }]"
           >
             <a-input v-model:value="registerMember.mobile" placeholder="手机号" size="large">
               <template #prefix>
@@ -22,7 +22,7 @@
 
           <a-form-item
               name="code" class="form-item"
-              :rules="[{ required: true, message: 'Please input your sms code!' }]"
+              :rules="[{ required: true, message: 'Please input your sms code!', trigger: 'blur'}]"
           >
             <a-input-search
                 v-model:value="registerMember.code"
@@ -39,7 +39,7 @@
 
           <a-form-item
               name="passwordOrigin" class="form-item"
-              :rules="[{ required: true, message: 'Please input your password!' }]"
+              :rules="[{ required: true, message: 'Please input your password!', trigger: 'blur' }, { pattern: /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/, message: '密码包含数字和英文，长度6-20', trigger: 'blur' }]"
           >
             <a-input-password v-model:value="registerMember.passwordOrigin" placeholder="密码" size="large">
               <template #prefix>
