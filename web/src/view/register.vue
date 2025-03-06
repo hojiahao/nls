@@ -29,7 +29,6 @@
                 v-model:value="registerMember.code"
                 placeholder="短信验证码"
                 :enter-button="sendText"
-                size="large"
                 @search="sendRegisterSmsCode"
             >
               <template #prefix>
@@ -86,9 +85,30 @@ const registerMember = ref({
   passwordOrigin: '',
   passwordConfirmed: ''
 });
-const sendText = ref("获取验证码")
+
 const register = values => {
   console.log('开始注册:', values);
+};
+
+// ----------- 短信验证码 --------------------
+const sendBtnLoading = ref(false);
+const sendText = ref("获取验证码");
+const COUNTDOWN = 60;
+let countdown = ref(COUNTDOWN);
+const setTime = () => {
+  if (countdown.value === 0) {
+    sendBtnLoading.value = false;
+    sendText.value = "获取验证码";
+    countdown.value = COUNTDOWN;
+    return;
+  } else {
+    sendBtnLoading.value = true;
+    sendText.value = "重新发送(" + countdown.value + "s" + ")";
+    countdown.value--;
+  }
+  setTimeout(function () {
+    setTime();
+  }, 60000);
 };
 
 const sendRegisterSmsCode = () => {
@@ -96,6 +116,7 @@ const sendRegisterSmsCode = () => {
   axios.post("/nls/web/sms-code/send-for-register", {mobile: registerMember.value.mobile}).then((response) => {
     let data = response.data;
     if (data.success) {
+      setTime();
       message.success("短信发送成功！")
     }
     else {

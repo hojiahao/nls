@@ -5197,3 +5197,113 @@ cn.edu.szu.nls.business.exception.BusinessException: null
 2025-03-06 16:47:36.688 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897569743598215168[0;39m 系统异常：
 cn.edu.szu.nls.business.exception.BusinessException: null
 2025-03-06 16:47:36.690 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897569743598215168[0;39m Resolved [BusinessException(exceptionEnum=SMS_CODE_ERROR)]
+2025-03-06 17:03:27.939 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897573733505392640[0;39m ------------ Around method invoked ------------
+2025-03-06 17:03:27.940 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897573733505392640[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 17:03:27.940 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897573733505392640[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 17:03:27.940 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897573733505392640[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-06 17:03:27.940 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897573733505392640[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 17:03:27.943 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897573733505392640[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 17:03:27.946 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897573733505392640[0;39m ==> Parameters: 15794926554(String)
+2025-03-06 17:03:27.950 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897573733505392640[0;39m <==      Total: 0
+2025-03-06 17:03:27.951 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :52   [32m1897573733505392640[0;39m 当前时间：Thu Mar 06 17:03:27 CST 2025
+2025-03-06 17:03:27.951 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :53   [32m1897573733505392640[0;39m 1分钟以前：2025-03-06 17:02:27
+2025-03-06 17:03:27.953 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897573733505392640[0;39m ==>  Preparing: select count(*) from sms_code WHERE ( `use` = ? and mobile = ? and created_at > ? )
+2025-03-06 17:03:27.953 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897573733505392640[0;39m ==> Parameters: 0(String), 15794926554(String), 2025-03-06 17:02:27.95(Timestamp)
+2025-03-06 17:03:27.956 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897573733505392640[0;39m <==    Columns: count(*)
+2025-03-06 17:03:27.956 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897573733505392640[0;39m <==        Row: 0
+2025-03-06 17:03:27.957 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897573733505392640[0;39m <==      Total: 1
+2025-03-06 17:03:27.957 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897573733505392640[0;39m ==>  Preparing: insert into sms_code (id, mobile, code, `use`, `status`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?)
+2025-03-06 17:03:27.957 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897573733505392640[0;39m ==> Parameters: 1897573733580890112(Long), 15794926554(String), 357531(String), 0(String), 0(String), 2025-03-06 17:03:27.95(Timestamp), 2025-03-06 17:03:27.95(Timestamp)
+2025-03-06 17:03:27.966 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897573733505392640[0;39m <==    Updates: 1
+2025-03-06 17:03:27.967 INFO  cn.edu.szu.nls.business.util.SmsUtil              :61   [32m1897573733505392640[0;39m 发送验证码手机号：15794926554，验证码：357531，签名：阿里云短信测试，模板：SMS_154950909
+2025-03-06 17:03:28.609 INFO  cn.edu.szu.nls.business.util.SmsUtil              :98   [32m1897573733505392640[0;39m 短信发送结果：{"body":{"code":"isv.SMS_TEST_NUMBER_LIMIT","message":"只能向已回复授权信息的手机号发送","requestId":"73A43A58-9319-568C-8CE1-78CCF4A433AD"},"headers":{"Keep-Alive":"timeout=25","Access-Control-Expose-Headers":"*","Access-Control-Allow-Origin":"*","ETag":"1BksC2dNh64fxd4tEoe2yEA6","x-acs-request-id":"73A43A58-9319-568C-8CE1-78CCF4A433AD","Connection":"keep-alive","Content-Length":"148","Date":"Thu, 06 Mar 2025 09:03:27 GMT","Content-Type":"application/json;charset=utf-8","x-acs-trace-id":"0d917bf676535df66574128f6ad29420"},"statusCode":200}
+2025-03-06 17:03:28.660 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897573733505392640[0;39m Request Result: {"success":true}
+2025-03-06 17:03:28.660 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897573733505392640[0;39m ------------ Around Method finished, Total Time: 720 ms ------------
+2025-03-06 17:04:29.995 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897573993787121664[0;39m ------------ Around method invoked ------------
+2025-03-06 17:04:29.995 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897573993787121664[0;39m Request Address: /nls/web/member/register POST
+2025-03-06 17:04:29.996 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897573993787121664[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebMemberController.register
+2025-03-06 17:04:29.996 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897573993787121664[0;39m Remote Address: 127.0.0.1
+2025-03-06 17:04:29.996 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897573993787121664[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 17:04:29.997 INFO  c.e.s.n.b.controller.web.WebMemberController      :30   [32m1897573993787121664[0;39m 会员注册开始：15794926554
+2025-03-06 17:04:29.999 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.selectByExample    :135  [32m1897573993787121664[0;39m ==>  Preparing: select id, mobile, code, `use`, `status`, created_at, updated_at from sms_code WHERE ( `use` = ? and mobile = ? and created_at > ? and `status` = ? ) order by created_at desc
+2025-03-06 17:04:30.000 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.selectByExample    :135  [32m1897573993787121664[0;39m ==> Parameters: 0(String), 15794926554(String), 2025-03-06 16:59:29.997(Timestamp), 0(String)
+2025-03-06 17:04:30.002 TRACE c.e.s.n.b.mapper.SmsCodeMapper.selectByExample    :141  [32m1897573993787121664[0;39m <==    Columns: id, mobile, code, use, status, created_at, updated_at
+2025-03-06 17:04:30.003 TRACE c.e.s.n.b.mapper.SmsCodeMapper.selectByExample    :141  [32m1897573993787121664[0;39m <==        Row: 1897573733580890112, 15794926554, 357531, 0, 0, 2025-03-06 17:03:27.950, 2025-03-06 17:03:27.950
+2025-03-06 17:04:30.003 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.selectByExample    :135  [32m1897573993787121664[0;39m <==      Total: 1
+2025-03-06 17:04:30.004 DEBUG c.e.s.n.b.m.S.updateByPrimaryKeySelective         :135  [32m1897573993787121664[0;39m ==>  Preparing: update sms_code SET mobile = ?, code = ?, `use` = ?, `status` = ?, created_at = ?, updated_at = ? where id = ?
+2025-03-06 17:04:30.005 DEBUG c.e.s.n.b.m.S.updateByPrimaryKeySelective         :135  [32m1897573993787121664[0;39m ==> Parameters: 15794926554(String), 357531(String), 0(String), 1(String), 2025-03-06 17:03:27.95(Timestamp), 2025-03-06 17:04:30.003(Timestamp), 1897573733580890112(Long)
+2025-03-06 17:04:30.012 DEBUG c.e.s.n.b.m.S.updateByPrimaryKeySelective         :135  [32m1897573993787121664[0;39m <==    Updates: 1
+2025-03-06 17:04:30.012 INFO  c.e.s.n.b.controller.web.WebMemberController      :34   [32m1897573993787121664[0;39m 用户15794926554输入的验证码有效。
+2025-03-06 17:04:30.013 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897573993787121664[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 17:04:30.013 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897573993787121664[0;39m ==> Parameters: 15794926554(String)
+2025-03-06 17:04:30.014 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897573993787121664[0;39m <==      Total: 0
+2025-03-06 17:04:30.016 DEBUG c.edu.szu.nls.business.mapper.MemberMapper.insert :135  [32m1897573993787121664[0;39m ==>  Preparing: insert into member (id, mobile, `password`, `name`, created_at, updated_at ) values (?, ?, ?, ?, ?, ? )
+2025-03-06 17:04:30.017 DEBUG c.edu.szu.nls.business.mapper.MemberMapper.insert :135  [32m1897573993787121664[0;39m ==> Parameters: 1897573993871007744(Long), 15794926554(String), f6de5abe706d0bf9774814ee200cecfa(String), 157****6554(String), 2025-03-06 17:04:30.012(Timestamp), 2025-03-06 17:04:30.012(Timestamp)
+2025-03-06 17:04:30.023 DEBUG c.edu.szu.nls.business.mapper.MemberMapper.insert :135  [32m1897573993787121664[0;39m <==    Updates: 1
+2025-03-06 17:04:30.024 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897573993787121664[0;39m Request Result: {"success":true}
+2025-03-06 17:04:30.024 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897573993787121664[0;39m ------------ Around Method finished, Total Time: 29 ms ------------
+2025-03-06 17:04:34.530 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897574012808290304[0;39m ------------ Around method invoked ------------
+2025-03-06 17:04:34.530 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897574012808290304[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 17:04:34.531 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897574012808290304[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 17:04:34.531 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897574012808290304[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-06 17:04:34.531 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897574012808290304[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 17:04:34.533 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574012808290304[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 17:04:34.534 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574012808290304[0;39m ==> Parameters: 15794926554(String)
+2025-03-06 17:04:34.538 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897574012808290304[0;39m <==    Columns: id, mobile, password, name, created_at, updated_at
+2025-03-06 17:04:34.539 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897574012808290304[0;39m <==        Row: 1897573993871007744, 15794926554, f6de5abe706d0bf9774814ee200cecfa, 157****6554, 2025-03-06 17:04:30.012, 2025-03-06 17:04:30.012
+2025-03-06 17:04:34.540 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574012808290304[0;39m <==      Total: 1
+2025-03-06 17:04:34.542 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897574012808290304[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 17:04:34.544 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897574012808290304[0;39m Resolved [BusinessException(exceptionEnum=MEMBER_MOBILE_HAD_REGISTER)]
+2025-03-06 17:04:40.237 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897574036745183232[0;39m ------------ Around method invoked ------------
+2025-03-06 17:04:40.238 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897574036745183232[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 17:04:40.238 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897574036745183232[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 17:04:40.238 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897574036745183232[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-06 17:04:40.238 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897574036745183232[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 17:04:40.240 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574036745183232[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 17:04:40.240 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574036745183232[0;39m ==> Parameters: 15794926554(String)
+2025-03-06 17:04:40.242 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897574036745183232[0;39m <==    Columns: id, mobile, password, name, created_at, updated_at
+2025-03-06 17:04:40.242 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897574036745183232[0;39m <==        Row: 1897573993871007744, 15794926554, f6de5abe706d0bf9774814ee200cecfa, 157****6554, 2025-03-06 17:04:30.012, 2025-03-06 17:04:30.012
+2025-03-06 17:04:40.243 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574036745183232[0;39m <==      Total: 1
+2025-03-06 17:04:40.244 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897574036745183232[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 17:04:40.246 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897574036745183232[0;39m Resolved [BusinessException(exceptionEnum=MEMBER_MOBILE_HAD_REGISTER)]
+2025-03-06 17:05:19.576 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897574201744908288[0;39m ------------ Around method invoked ------------
+2025-03-06 17:05:19.576 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897574201744908288[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 17:05:19.577 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897574201744908288[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 17:05:19.577 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897574201744908288[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-06 17:05:19.577 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897574201744908288[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 17:05:19.579 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574201744908288[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 17:05:19.581 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574201744908288[0;39m ==> Parameters: 15794926554(String)
+2025-03-06 17:05:19.586 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897574201744908288[0;39m <==    Columns: id, mobile, password, name, created_at, updated_at
+2025-03-06 17:05:19.587 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897574201744908288[0;39m <==        Row: 1897573993871007744, 15794926554, f6de5abe706d0bf9774814ee200cecfa, 157****6554, 2025-03-06 17:04:30.012, 2025-03-06 17:04:30.012
+2025-03-06 17:05:19.590 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574201744908288[0;39m <==      Total: 1
+2025-03-06 17:05:19.592 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897574201744908288[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 17:05:19.593 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897574201744908288[0;39m Resolved [BusinessException(exceptionEnum=MEMBER_MOBILE_HAD_REGISTER)]
+2025-03-06 17:06:33.192 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897574510512791552[0;39m ------------ Around method invoked ------------
+2025-03-06 17:06:33.192 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897574510512791552[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 17:06:33.192 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897574510512791552[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 17:06:33.192 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897574510512791552[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-06 17:06:33.194 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897574510512791552[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 17:06:33.196 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574510512791552[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 17:06:33.198 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574510512791552[0;39m ==> Parameters: 15794926554(String)
+2025-03-06 17:06:33.210 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897574510512791552[0;39m <==    Columns: id, mobile, password, name, created_at, updated_at
+2025-03-06 17:06:33.211 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897574510512791552[0;39m <==        Row: 1897573993871007744, 15794926554, f6de5abe706d0bf9774814ee200cecfa, 157****6554, 2025-03-06 17:04:30.012, 2025-03-06 17:04:30.012
+2025-03-06 17:06:33.212 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574510512791552[0;39m <==      Total: 1
+2025-03-06 17:06:33.213 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897574510512791552[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 17:06:33.214 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897574510512791552[0;39m Resolved [BusinessException(exceptionEnum=MEMBER_MOBILE_HAD_REGISTER)]
+2025-03-06 17:06:41.749 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897574546403450880[0;39m ------------ Around method invoked ------------
+2025-03-06 17:06:41.749 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897574546403450880[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 17:06:41.749 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897574546403450880[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 17:06:41.749 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897574546403450880[0;39m Remote Address: 0:0:0:0:0:0:0:1
+2025-03-06 17:06:41.749 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897574546403450880[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 17:06:41.752 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574546403450880[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 17:06:41.752 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574546403450880[0;39m ==> Parameters: 15794926554(String)
+2025-03-06 17:06:41.754 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897574546403450880[0;39m <==    Columns: id, mobile, password, name, created_at, updated_at
+2025-03-06 17:06:41.755 TRACE c.e.s.n.b.mapper.MemberMapper.selectByExample     :141  [32m1897574546403450880[0;39m <==        Row: 1897573993871007744, 15794926554, f6de5abe706d0bf9774814ee200cecfa, 157****6554, 2025-03-06 17:04:30.012, 2025-03-06 17:04:30.012
+2025-03-06 17:06:41.755 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897574546403450880[0;39m <==      Total: 1
+2025-03-06 17:06:41.756 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897574546403450880[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 17:06:41.756 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897574546403450880[0;39m Resolved [BusinessException(exceptionEnum=MEMBER_MOBILE_HAD_REGISTER)]

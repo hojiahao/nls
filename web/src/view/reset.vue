@@ -29,7 +29,6 @@
                 v-model:value="resetMember.code"
                 placeholder="短信验证码"
                 :enter-button="sendText"
-                size="large"
                 @search="sendResetSmsCode"
             >
               <template #prefix>

@@ -2138,3 +2138,13 @@ cn.edu.szu.nls.business.exception.BusinessException: null
 cn.edu.szu.nls.business.exception.BusinessException: null
 2025-03-06 16:47:36.688 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897569743598215168[0;39m 系统异常：
 cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 17:04:34.542 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897574012808290304[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 17:04:40.244 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897574036745183232[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 17:05:19.592 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897574201744908288[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 17:06:33.213 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897574510512791552[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 17:06:41.756 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897574546403450880[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
