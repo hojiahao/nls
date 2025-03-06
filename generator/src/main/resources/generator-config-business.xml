@@ -38,6 +38,7 @@
         <javaClientGenerator targetProject="../business/src/main/java"
                              targetPackage="cn.edu.szu.nls.business.mapper"
                              type="XMLMAPPER"/>
-        <table tableName="demo" domainObjectName="Demo"/>
+<!--        <table tableName="demo" domainObjectName="Demo"/>-->
+        <table tableName="sms_code" domainObjectName="SmsCode"/>
     </context>
 </generatorConfiguration>
