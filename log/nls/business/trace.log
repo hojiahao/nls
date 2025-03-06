@@ -5141,3 +5141,59 @@ cn.edu.szu.nls.business.exception.BusinessException: null
 2025-03-06 16:46:02.287 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
 2025-03-06 16:46:02.293 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
 2025-03-06 16:46:02.307 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2025-03-06 16:46:04.481 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.2.Final
+2025-03-06 16:46:04.524 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 11768 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 16:46:04.526 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 16:46:04.576 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-06 16:46:04.577 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-06 16:46:06.084 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 16:46:06.106 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:46:06.108 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 16:46:06.109 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 16:46:06.177 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 16:46:06.178 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1600 ms
+2025-03-06 16:46:07.119 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 16:46:07.137 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 16:46:07.157 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 16:46:07.166 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 3.147 seconds (process running for 3.883)
+2025-03-06 16:46:07.169 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 16:46:07.169 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 16:46:10.227 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-06 16:46:10.228 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2025-03-06 16:46:10.230 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2025-03-06 16:46:10.456 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897569381986295808[0;39m ------------ Around method invoked ------------
+2025-03-06 16:46:10.457 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897569381986295808[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 16:46:10.457 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897569381986295808[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 16:46:10.458 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897569381986295808[0;39m Remote Address: 127.0.0.1
+2025-03-06 16:46:10.589 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897569381986295808[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 16:46:10.632 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1897569381986295808[0;39m HikariPool-1 - Starting...
+2025-03-06 16:46:10.873 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1897569381986295808[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d856f7f
+2025-03-06 16:46:10.875 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1897569381986295808[0;39m HikariPool-1 - Start completed.
+2025-03-06 16:46:10.883 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897569381986295808[0;39m ==>  Preparing: select id, mobile, `password`, `name`, created_at, updated_at from member WHERE ( mobile = ? )
+2025-03-06 16:46:10.905 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897569381986295808[0;39m ==> Parameters: 15794926554(String)
+2025-03-06 16:46:10.925 DEBUG c.e.s.n.b.mapper.MemberMapper.selectByExample     :135  [32m1897569381986295808[0;39m <==      Total: 0
+2025-03-06 16:46:10.938 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :52   [32m1897569381986295808[0;39m 当前时间：Thu Mar 06 16:46:10 CST 2025
+2025-03-06 16:46:10.939 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :53   [32m1897569381986295808[0;39m 1分钟以前：2025-03-06 16:45:10
+2025-03-06 16:46:10.941 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897569381986295808[0;39m ==>  Preparing: select count(*) from sms_code WHERE ( `use` = ? and mobile = ? and created_at > ? )
+2025-03-06 16:46:10.942 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897569381986295808[0;39m ==> Parameters: 0(String), 15794926554(String), 2025-03-06 16:45:10.934(Timestamp)
+2025-03-06 16:46:10.946 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897569381986295808[0;39m <==    Columns: count(*)
+2025-03-06 16:46:10.946 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897569381986295808[0;39m <==        Row: 1
+2025-03-06 16:46:10.947 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897569381986295808[0;39m <==      Total: 1
+2025-03-06 16:46:10.950 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897569381986295808[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 16:46:10.970 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897569381986295808[0;39m Resolved [BusinessException(exceptionEnum=SMS_CODE_TOO_FREQUENT)]
+2025-03-06 16:47:36.671 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897569743598215168[0;39m ------------ Around method invoked ------------
+2025-03-06 16:47:36.671 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897569743598215168[0;39m Request Address: /nls/web/member/register POST
+2025-03-06 16:47:36.672 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897569743598215168[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebMemberController.register
+2025-03-06 16:47:36.672 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897569743598215168[0;39m Remote Address: 127.0.0.1
+2025-03-06 16:47:36.672 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897569743598215168[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 16:47:36.672 INFO  c.e.s.n.b.controller.web.WebMemberController      :30   [32m1897569743598215168[0;39m 会员注册开始：15794926554
+2025-03-06 16:47:36.680 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.selectByExample    :135  [32m1897569743598215168[0;39m ==>  Preparing: select id, mobile, code, `use`, `status`, created_at, updated_at from sms_code WHERE ( `use` = ? and mobile = ? and created_at > ? and `status` = ? ) order by created_at desc
+2025-03-06 16:47:36.681 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.selectByExample    :135  [32m1897569743598215168[0;39m ==> Parameters: 0(String), 15794926554(String), 2025-03-06 16:42:36.677(Timestamp), 0(String)
+2025-03-06 16:47:36.684 TRACE c.e.s.n.b.mapper.SmsCodeMapper.selectByExample    :141  [32m1897569743598215168[0;39m <==    Columns: id, mobile, code, use, status, created_at, updated_at
+2025-03-06 16:47:36.685 TRACE c.e.s.n.b.mapper.SmsCodeMapper.selectByExample    :141  [32m1897569743598215168[0;39m <==        Row: 1897569343839059968, 15794926554, 432579, 0, 0, 2025-03-06 16:46:01.328, 2025-03-06 16:46:01.328
+2025-03-06 16:47:36.686 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.selectByExample    :135  [32m1897569743598215168[0;39m <==      Total: 1
+2025-03-06 16:47:36.687 WARN  cn.edu.szu.nls.business.service.SmsCodeService    :94   [32m1897569743598215168[0;39m 验证码不正确，手机号:15794926554， 输入的验证码：432580，用途：0
+2025-03-06 16:47:36.688 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897569743598215168[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 16:47:36.690 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897569743598215168[0;39m Resolved [BusinessException(exceptionEnum=SMS_CODE_ERROR)]

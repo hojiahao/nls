@@ -76,6 +76,8 @@
 </template>
 <script setup>
 import {ref} from 'vue';
+import axios from "axios";
+import {message} from "ant-design-vue";
 
 const registerMember = ref({
   mobile: '',
@@ -90,6 +92,15 @@ const register = values => {
 };
 
 const sendRegisterSmsCode = () => {
-  console.log("发送短信验证码")
+  console.log("发送短信验证码:")
+  axios.post("/nls/web/sms-code/send-for-register", {mobile: registerMember.value.mobile}).then((response) => {
+    let data = response.data;
+    if (data.success) {
+      message.success("短信发送成功！")
+    }
+    else {
+      message.error(data.msg)
+    }
+  })
 }
 </script>
