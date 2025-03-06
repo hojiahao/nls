@@ -1,6 +1,5 @@
 package cn.edu.szu.nls.business.controller.web;
 
-import cn.edu.szu.nls.business.enums.SmsCodeUseEnum;
 import cn.edu.szu.nls.business.request.SmsCodeRegisterRequest;
 import cn.edu.szu.nls.business.response.CommonResponse;
 import cn.edu.szu.nls.business.service.SmsCodeService;
@@ -20,7 +19,7 @@ public class WebSmsCodeController {
 
     @PostMapping("/send-for-register")
     public CommonResponse<Object> sendForRegister(@Valid @RequestBody SmsCodeRegisterRequest request) {
-        smsCodeService.sendCode(request.getMobile(), SmsCodeUseEnum.REGISTER.getCode());
+        smsCodeService.sendCodeForRegister(request.getMobile());
         return new CommonResponse<>();
     }
 }

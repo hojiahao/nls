@@ -1,8 +1,10 @@
 package cn.edu.szu.nls.business.service;
 
+import cn.edu.szu.nls.business.domain.Member;
 import cn.edu.szu.nls.business.domain.SmsCode;
 import cn.edu.szu.nls.business.domain.SmsCodeExample;
 import cn.edu.szu.nls.business.enums.SmsCodeStatusEnum;
+import cn.edu.szu.nls.business.enums.SmsCodeUseEnum;
 import cn.edu.szu.nls.business.exception.BusinessException;
 import cn.edu.szu.nls.business.exception.BusinessExceptionEnum;
 import cn.edu.szu.nls.business.mapper.SmsCodeMapper;
@@ -21,6 +23,18 @@ import java.util.Date;
 public class SmsCodeService {
     @Resource
     private SmsCodeMapper smsCodeMapper;
+
+    @Resource
+    private MemberService memberService;
+
+    public void sendCodeForRegister(String mobile) {
+        Member member = memberService.selectByMobile(mobile);
+        if (member != null) {
+            throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_HAD_REGISTER);
+        }
+        sendCode(mobile, SmsCodeUseEnum.REGISTER.getCode());
+    }
+
     /**
      * 发送短信验证码
      * 校验：同一个手机号一分钟内用同用途发送记录，则报错：短信请求过于频繁
