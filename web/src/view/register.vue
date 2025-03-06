@@ -74,8 +74,9 @@
 import {ref} from 'vue';
 import axios from "axios";
 import {message} from "ant-design-vue";
-import router from "../router/index.js";
+import {useRouter} from "vue-router";
 
+let router = useRouter()
 const registerMember = ref({
   mobile: '',
   code: '',
