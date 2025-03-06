@@ -2365,3 +2365,33 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: cn.edu.szu.nls.b
 	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
 	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
 	... 45 common frames omitted
+2025-03-06 19:31:19.554 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.nls.business.service.KaptchaService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.nls.business.service.KaptchaService' in your configuration.
+
+2025-03-06 19:32:02.097 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.edu.szu.nls.business.service.KaptchaService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.edu.szu.nls.business.service.KaptchaService' in your configuration.
+

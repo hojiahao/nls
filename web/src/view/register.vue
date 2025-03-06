@@ -146,7 +146,9 @@ const sendRegisterSmsCode = () => {
   console.log("发送短信验证码:")
   sendBtnLoading.value = true
   axios.post("/nls/web/sms-code/send-for-register", {
-    mobile: registerMember.value.mobile
+    mobile: registerMember.value.mobile,
+    imageCode: registerMember.value.imageCode,
+    imageCodeToken: imageCodeToken.value
   }).then((response) => {
     let data = response.data;
     if (data.success) {
