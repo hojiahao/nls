@@ -1522,3 +1522,1109 @@ cn.edu.szu.nls.business.exception.BusinessException: null
 2025-03-06 13:16:55.242 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2025-03-06 13:16:55.242 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
 2025-03-06 13:16:55.242 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 13:18:08.567 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-06 13:18:08.567 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2025-03-06 13:18:08.568 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2025-03-06 13:18:08.610 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897517029329670144[0;39m ------------ Around method invoked ------------
+2025-03-06 13:18:08.610 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897517029329670144[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 13:18:08.610 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897517029329670144[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 13:18:08.611 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897517029329670144[0;39m Remote Address: 127.0.0.1
+2025-03-06 13:18:08.611 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897517029329670144[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 13:18:08.614 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :35   [32m1897517029329670144[0;39m 当前时间：Thu Mar 06 13:18:08 CST 2025
+2025-03-06 13:18:08.614 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :36   [32m1897517029329670144[0;39m 1分钟以前：2025-03-06 13:17:08
+2025-03-06 13:18:08.616 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1897517029329670144[0;39m HikariPool-3 - Starting...
+2025-03-06 13:18:08.641 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1897517029329670144[0;39m HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@255dcd54
+2025-03-06 13:18:08.641 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1897517029329670144[0;39m HikariPool-3 - Start completed.
+2025-03-06 13:18:08.641 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897517029329670144[0;39m ==>  Preparing: select count(*) from sms_code WHERE ( `use` = ? and mobile = ? and created_at > ? )
+2025-03-06 13:18:08.642 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897517029329670144[0;39m ==> Parameters: 0(String), 123(String), 2025-03-06 13:17:08.613(Timestamp)
+2025-03-06 13:18:08.644 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897517029329670144[0;39m <==    Columns: count(*)
+2025-03-06 13:18:08.644 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897517029329670144[0;39m <==        Row: 0
+2025-03-06 13:18:08.644 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897517029329670144[0;39m <==      Total: 1
+2025-03-06 13:18:08.646 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897517029329670144[0;39m ==>  Preparing: insert into sms_code (id, mobile, code, `use`, `status`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?)
+2025-03-06 13:18:08.647 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897517029329670144[0;39m ==> Parameters: 1897517029480665088(Long), 123(String), 681214(String), 0(String), 0(String), 2025-03-06 13:18:08.612(Timestamp), 2025-03-06 13:18:08.612(Timestamp)
+2025-03-06 13:18:08.653 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897517029329670144[0;39m <==    Updates: 1
+2025-03-06 13:18:08.656 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :73   [32m1897517029329670144[0;39m Request Result: {"success":true}
+2025-03-06 13:18:08.656 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :74   [32m1897517029329670144[0;39m ------------ Around Method finished, Total Time: 46 ms ------------
+2025-03-06 13:18:27.202 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897517107310170112[0;39m ------------ Around method invoked ------------
+2025-03-06 13:18:27.203 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897517107310170112[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 13:18:27.203 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897517107310170112[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 13:18:27.203 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897517107310170112[0;39m Remote Address: 127.0.0.1
+2025-03-06 13:18:27.203 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897517107310170112[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 13:18:27.204 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :35   [32m1897517107310170112[0;39m 当前时间：Thu Mar 06 13:18:27 CST 2025
+2025-03-06 13:18:27.204 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :36   [32m1897517107310170112[0;39m 1分钟以前：2025-03-06 13:17:27
+2025-03-06 13:18:27.206 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897517107310170112[0;39m ==>  Preparing: select count(*) from sms_code WHERE ( `use` = ? and mobile = ? and created_at > ? )
+2025-03-06 13:18:27.207 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897517107310170112[0;39m ==> Parameters: 0(String), 123(String), 2025-03-06 13:17:27.204(Timestamp)
+2025-03-06 13:18:27.209 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897517107310170112[0;39m <==    Columns: count(*)
+2025-03-06 13:18:27.210 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897517107310170112[0;39m <==        Row: 1
+2025-03-06 13:18:27.210 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897517107310170112[0;39m <==      Total: 1
+2025-03-06 13:18:27.212 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897517107310170112[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 13:18:27.214 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897517107310170112[0;39m Resolved [BusinessException(exceptionEnum=SMS_CODE_TOO_FREQUENT)]
+2025-03-06 14:30:07.929 WARN  com.zaxxer.hikari.pool.HikariPool                 :797  [32m                  [0;39m HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=6m58s933ms743µs500ns).
+2025-03-06 15:00:12.167 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 30 class path changes (0 additions, 30 deletions, 0 modifications)
+2025-03-06 15:00:12.206 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:00:12.220 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:00:12.995 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:00:12.996 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:00:13.013 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2025-03-06 15:00:13.032 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2025-03-06 15:00:13.395 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:00:13.395 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:00:13.638 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[cn.edu.szu.nls.business.mapper]' package. Please check your configuration.
+2025-03-06 15:00:13.722 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:00:13.724 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:00:13.724 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:00:13.725 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:00:13.753 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:00:13.754 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 356 ms
+2025-03-06 15:00:13.917 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [E:\Projects\nls\business\target\classes\mapper\DemoMapper.xml]'
+2025-03-06 15:00:13.918 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:00:13.925 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:00:13.928 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [E:\Projects\nls\business\target\classes\mapper\DemoMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [E:\Projects\nls\business\target\classes\mapper\DemoMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 26 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [E:\Projects\nls\business\target\classes\mapper\DemoMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:695)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:572)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:712)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 29 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\Projects\nls\business\target\classes\mapper\DemoMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'cn.edu.szu.nls.business.domain.Demo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: cn.edu.szu.nls.business.domain.Demo
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:98)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:693)
+	... 37 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'cn.edu.szu.nls.business.domain.Demo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: cn.edu.szu.nls.business.domain.Demo
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:103)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:222)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:214)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:206)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121)
+	... 39 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'cn.edu.szu.nls.business.domain.Demo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: cn.edu.szu.nls.business.domain.Demo
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:132)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:101)
+	... 43 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: cn.edu.szu.nls.business.domain.Demo
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 45 common frames omitted
+2025-03-06 15:00:15.379 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:00:15.379 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:00:15.603 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:00:15.603 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:00:15.603 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:00:15.603 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:00:15.622 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:00:15.622 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 241 ms
+2025-03-06 15:00:15.940 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:00:15.947 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:00:15.951 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:00:15.955 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.597 seconds (process running for 6794.87)
+2025-03-06 15:00:15.956 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:00:15.956 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:00:15.956 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:00:27.491 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-06 15:00:27.492 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:00:27.494 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:00:28.168 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:00:28.169 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:00:28.252 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:00:28.252 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:00:28.451 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:00:28.452 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:00:28.452 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:00:28.452 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:00:28.470 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:00:28.470 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 216 ms
+2025-03-06 15:00:28.759 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:00:28.765 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:00:28.769 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:00:28.772 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.538 seconds (process running for 6807.687)
+2025-03-06 15:00:28.773 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:00:28.773 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:00:28.773 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:01:09.655 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-06 15:01:09.656 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:01:09.656 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:01:10.278 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:01:10.278 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:01:10.347 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:01:10.347 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:01:10.572 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:01:10.573 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:01:10.573 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:01:10.573 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:01:10.592 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:01:10.592 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 243 ms
+2025-03-06 15:01:10.890 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:01:10.898 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:01:10.901 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:01:10.905 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.579 seconds (process running for 6849.82)
+2025-03-06 15:01:10.906 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:01:10.906 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:01:10.906 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:03:34.364 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-06 15:03:34.365 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:03:34.366 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:03:35.005 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:03:35.005 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:03:35.074 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:03:35.074 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:03:35.265 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:03:35.265 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:03:35.266 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:03:35.266 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:03:35.285 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:03:35.285 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 210 ms
+2025-03-06 15:03:35.577 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:03:35.585 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:03:35.590 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:03:35.594 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.545 seconds (process running for 6994.509)
+2025-03-06 15:03:35.595 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:03:35.595 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:03:35.595 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:04:02.342 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-06 15:04:02.343 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:04:02.344 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:04:03.088 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:04:03.088 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:04:03.156 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:04:03.156 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:04:03.358 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:04:03.358 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:04:03.358 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:04:03.359 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:04:03.379 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:04:03.379 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 222 ms
+2025-03-06 15:04:03.451 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSmsCodeController' defined in file [E:\Projects\nls\business\target\classes\cn\edu\szu\nls\business\controller\web\WebSmsCodeController.class]: Post-processing of merged bean definition failed
+2025-03-06 15:04:03.451 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:04:03.454 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:04:03.457 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSmsCodeController' defined in file [E:\Projects\nls\business\target\classes\cn\edu\szu\nls\business\controller\web\WebSmsCodeController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.controller.web.WebSmsCodeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@31bddf50]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:756)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:432)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:413)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:313)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: cn/edu/szu/nls/business/service/SmsCodeService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:751)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: cn.edu.szu.nls.business.service.SmsCodeService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:07:07.198 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:07:07.198 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:07:07.561 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:07:07.561 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:07:07.562 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:07:07.562 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:07:07.588 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:07:07.588 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 388 ms
+2025-03-06 15:07:08.073 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:07:08.083 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:07:08.088 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:07:08.092 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.925 seconds (process running for 7207.007)
+2025-03-06 15:07:08.093 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:07:08.093 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:07:08.093 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:07:10.512 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)
+2025-03-06 15:07:10.512 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:07:10.513 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:07:11.130 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:07:11.130 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:07:11.188 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:07:11.188 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:07:11.380 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:07:11.380 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:07:11.380 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:07:11.380 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:07:11.399 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:07:11.399 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 210 ms
+2025-03-06 15:07:11.472 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+2025-03-06 15:07:11.472 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:07:11.475 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:07:11.477 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.util.SmsUtil] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@24a47a4f]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/aliyun/auth/credentials/provider/ICredentialProvider
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.aliyun.auth.credentials.provider.ICredentialProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:07:36.263 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:07:36.264 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:07:36.515 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:07:36.516 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:07:36.516 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:07:36.516 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:07:36.535 INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:07:36.535 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 270 ms
+2025-03-06 15:07:36.933 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:07:36.941 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:07:36.944 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:07:36.948 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.712 seconds (process running for 7235.863)
+2025-03-06 15:07:36.949 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:07:36.949 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:07:36.950 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:07:38.357 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-06 15:07:38.358 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:07:38.358 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:07:39.002 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:07:39.002 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:07:39.090 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:07:39.090 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:07:39.293 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:07:39.294 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:07:39.294 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:07:39.294 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:07:39.314 INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:07:39.314 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 223 ms
+2025-03-06 15:07:39.490 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+2025-03-06 15:07:39.491 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:07:39.496 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:07:39.499 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.util.SmsUtil] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@766cc6ad]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/aliyun/auth/credentials/provider/ICredentialProvider
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.aliyun.auth.credentials.provider.ICredentialProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:12:29.845 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:12:29.845 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:12:30.063 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:12:30.065 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:12:30.066 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:12:30.066 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:12:30.083 INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:12:30.084 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 238 ms
+2025-03-06 15:12:30.158 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+2025-03-06 15:12:30.159 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:12:30.163 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:12:30.164 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.util.SmsUtil] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7edc7521]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/aliyun/auth/credentials/provider/ICredentialProvider
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.aliyun.auth.credentials.provider.ICredentialProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:14:45.374 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:14:45.374 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:14:45.641 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:14:45.642 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:14:45.643 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:14:45.643 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:14:45.665 INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:14:45.665 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 289 ms
+2025-03-06 15:14:45.740 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+2025-03-06 15:14:45.741 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:14:45.745 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:14:45.748 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.util.SmsUtil] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@47d03310]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/aliyun/auth/credentials/provider/ICredentialProvider
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.aliyun.auth.credentials.provider.ICredentialProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:14:57.328 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:14:57.328 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:14:57.561 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:14:57.562 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:14:57.562 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:14:57.562 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:14:57.582 INFO  o.a.c.c.C.[Tomcat-7].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:14:57.583 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 254 ms
+2025-03-06 15:14:57.657 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+2025-03-06 15:14:57.658 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:14:57.662 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:14:57.666 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.util.SmsUtil] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@68ade30]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/aliyun/auth/credentials/provider/ICredentialProvider
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.aliyun.auth.credentials.provider.ICredentialProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:15:17.341 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:15:17.342 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:15:17.589 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:15:17.591 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:15:17.591 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:15:17.591 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:15:17.610 INFO  o.a.c.c.C.[Tomcat-8].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:15:17.611 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 268 ms
+2025-03-06 15:15:17.683 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+2025-03-06 15:15:17.684 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:15:17.687 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:15:17.691 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.util.SmsUtil] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@164339e2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/aliyun/auth/credentials/provider/ICredentialProvider
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.aliyun.auth.credentials.provider.ICredentialProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:15:55.609 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:15:55.609 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:15:55.832 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:15:55.833 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:15:55.833 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:15:55.833 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:15:55.855 INFO  o.a.c.c.C.[Tomcat-9].[localhost].[/nls]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:15:55.855 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 245 ms
+2025-03-06 15:15:55.926 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+2025-03-06 15:15:55.927 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:15:55.931 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:15:55.933 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.util.SmsUtil] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@bab3376]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/aliyun/auth/credentials/provider/ICredentialProvider
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.aliyun.auth.credentials.provider.ICredentialProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:16:15.605 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:16:15.605 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:16:15.820 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:16:15.822 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:16:15.822 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:16:15.822 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:16:15.841 INFO  o.a.c.c.C.[Tomcat-10].[localhost].[/nls]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:16:15.841 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 235 ms
+2025-03-06 15:16:15.917 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+2025-03-06 15:16:15.917 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:16:15.921 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:16:15.923 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.util.SmsUtil] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4d25d9a0]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/aliyun/auth/credentials/provider/ICredentialProvider
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.aliyun.auth.credentials.provider.ICredentialProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:17:09.042 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:17:09.042 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:17:09.294 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:17:09.295 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:17:09.295 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:17:09.295 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:17:09.319 INFO  o.a.c.c.C.[Tomcat-11].[localhost].[/nls]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:17:09.319 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 275 ms
+2025-03-06 15:17:09.393 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+2025-03-06 15:17:09.393 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:17:09.397 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:17:09.399 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.util.SmsUtil] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1d8ef56a]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/aliyun/auth/credentials/provider/ICredentialProvider
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.aliyun.auth.credentials.provider.ICredentialProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:18:58.260 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:18:58.260 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:18:58.491 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:18:58.491 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:18:58.491 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:18:58.492 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:18:58.513 INFO  o.a.c.c.C.[Tomcat-12].[localhost].[/nls]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:18:58.514 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 253 ms
+2025-03-06 15:18:58.596 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+2025-03-06 15:18:58.596 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:18:58.600 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:18:58.602 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.util.SmsUtil] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@120d4310]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/aliyun/auth/credentials/provider/ICredentialProvider
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.aliyun.auth.credentials.provider.ICredentialProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:21:04.804 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:21:04.805 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:21:05.092 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:21:05.092 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:21:05.094 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:21:05.095 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:21:05.116 INFO  o.a.c.c.C.[Tomcat-13].[localhost].[/nls]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:21:05.116 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 308 ms
+2025-03-06 15:21:05.457 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:21:05.465 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:21:05.469 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:21:05.474 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 0.71 seconds (process running for 8044.389)
+2025-03-06 15:21:05.475 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2025-03-06 15:21:05.475 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:21:05.475 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:21:06.882 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-06 15:21:06.883 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:21:06.884 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:21:07.535 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:21:07.535 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:21:07.604 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 18924 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:21:07.604 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:21:07.813 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:21:07.814 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:21:07.814 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:21:07.814 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:21:07.835 INFO  o.a.c.c.C.[Tomcat-13].[localhost].[/nls]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:21:07.835 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 230 ms
+2025-03-06 15:21:07.911 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+2025-03-06 15:21:07.912 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2025-03-06 15:21:07.915 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-06 15:21:07.917 ERROR org.springframework.boot.SpringApplication        :857  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsUtil': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.edu.szu.nls.business.config.BusinessApplication.main(BusinessApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [cn.edu.szu.nls.business.util.SmsUtil] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@12846024]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/aliyun/auth/credentials/provider/ICredentialProvider
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.aliyun.auth.credentials.provider.ICredentialProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 32 common frames omitted
+2025-03-06 15:21:31.881 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.2.Final
+2025-03-06 15:21:31.933 INFO  c.edu.szu.nls.business.config.BusinessApplication :53   [32m                  [0;39m Starting BusinessApplication using Java 17.0.12 with PID 4772 (E:\Projects\nls\business\target\classes started by hojiahao in E:\Projects\nls)
+2025-03-06 15:21:31.935 INFO  c.edu.szu.nls.business.config.BusinessApplication :652  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2025-03-06 15:21:31.978 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-06 15:21:31.979 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-06 15:21:33.385 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :111  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2025-03-06 15:21:33.396 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:21:33.398 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2025-03-06 15:21:33.398 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-06 15:21:33.456 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2025-03-06 15:21:33.456 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :301  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1477 ms
+2025-03-06 15:21:34.279 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2025-03-06 15:21:34.299 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2025-03-06 15:21:34.320 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :243  [32m                  [0;39m Tomcat started on port 8080 (http) with context path '/nls'
+2025-03-06 15:21:34.328 INFO  c.edu.szu.nls.business.config.BusinessApplication :59   [32m                  [0;39m Started BusinessApplication in 2.871 seconds (process running for 3.575)
+2025-03-06 15:21:34.331 INFO  c.edu.szu.nls.business.config.BusinessApplication :18   [32m                  [0;39m 启动成功！
+2025-03-06 15:21:34.332 INFO  c.edu.szu.nls.business.config.BusinessApplication :19   [32m                  [0;39m 测试地址：http://localhost:8080/nls/hello
+2025-03-06 15:21:39.763 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-06 15:21:39.764 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2025-03-06 15:21:39.765 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2025-03-06 15:21:39.983 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897548114881024000[0;39m ------------ Around method invoked ------------
+2025-03-06 15:21:39.987 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897548114881024000[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 15:21:39.987 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897548114881024000[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 15:21:39.987 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897548114881024000[0;39m Remote Address: 127.0.0.1
+2025-03-06 15:21:40.114 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897548114881024000[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 15:21:40.122 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :36   [32m1897548114881024000[0;39m 当前时间：Thu Mar 06 15:21:40 CST 2025
+2025-03-06 15:21:40.122 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :37   [32m1897548114881024000[0;39m 1分钟以前：2025-03-06 15:20:40
+2025-03-06 15:21:40.168 INFO  com.zaxxer.hikari.HikariDataSource                :109  [32m1897548114881024000[0;39m HikariPool-1 - Starting...
+2025-03-06 15:21:40.472 INFO  com.zaxxer.hikari.pool.HikariPool                 :554  [32m1897548114881024000[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6dedb531
+2025-03-06 15:21:40.474 INFO  com.zaxxer.hikari.HikariDataSource                :122  [32m1897548114881024000[0;39m HikariPool-1 - Start completed.
+2025-03-06 15:21:40.481 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897548114881024000[0;39m ==>  Preparing: select count(*) from sms_code WHERE ( `use` = ? and mobile = ? and created_at > ? )
+2025-03-06 15:21:40.504 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897548114881024000[0;39m ==> Parameters: 0(String), 123(String), 2025-03-06 15:20:40.118(Timestamp)
+2025-03-06 15:21:40.530 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897548114881024000[0;39m <==    Columns: count(*)
+2025-03-06 15:21:40.530 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897548114881024000[0;39m <==        Row: 0
+2025-03-06 15:21:40.531 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897548114881024000[0;39m <==      Total: 1
+2025-03-06 15:21:40.539 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897548114881024000[0;39m ==>  Preparing: insert into sms_code (id, mobile, code, `use`, `status`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?)
+2025-03-06 15:21:40.541 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897548114881024000[0;39m ==> Parameters: 1897548117208862720(Long), 123(String), 136611(String), 0(String), 0(String), 2025-03-06 15:21:40.115(Timestamp), 2025-03-06 15:21:40.115(Timestamp)
+2025-03-06 15:21:40.551 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897548114881024000[0;39m <==    Updates: 1
+2025-03-06 15:21:40.552 INFO  cn.edu.szu.nls.business.util.SmsUtil              :61   [32m1897548114881024000[0;39m 发送验证码手机号：123，验证码：136611，签名：阿里云短信测试，模板：SMS_309990134
+2025-03-06 15:21:41.202 INFO  cn.edu.szu.nls.business.util.SmsUtil              :98   [32m1897548114881024000[0;39m 短信发送结果：{"body":{"code":"isv.SMS_TEST_SIGN_TEMPLATE_LIMIT","message":"测试专用签名和模板必须结合使用","requestId":"07DA2D33-A321-5D35-8182-E843A65F7710"},"headers":{"Keep-Alive":"timeout=25","Access-Control-Expose-Headers":"*","Access-Control-Allow-Origin":"*","ETag":"1W84L/+iKf/0KS9jagLcodQ2","x-acs-request-id":"07DA2D33-A321-5D35-8182-E843A65F7710","Connection":"keep-alive","Content-Length":"152","Date":"Thu, 06 Mar 2025 07:21:39 GMT","Content-Type":"application/json;charset=utf-8","x-acs-trace-id":"cb8c8d31a29363b84a8c5926f7181b9c"},"statusCode":200}
+2025-03-06 15:21:41.203 ERROR cn.edu.szu.nls.business.util.SmsUtil              :112  [32m1897548114881024000[0;39m 短信发送异常
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 15:21:41.255 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897548114881024000[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 15:21:41.277 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897548114881024000[0;39m Resolved [BusinessException(exceptionEnum=SMS_CODE_SEND_ERROR)]
+2025-03-06 15:21:58.772 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897548193687801856[0;39m ------------ Around method invoked ------------
+2025-03-06 15:21:58.772 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897548193687801856[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 15:21:58.773 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897548193687801856[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 15:21:58.773 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897548193687801856[0;39m Remote Address: 127.0.0.1
+2025-03-06 15:21:58.773 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897548193687801856[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 15:21:58.774 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :36   [32m1897548193687801856[0;39m 当前时间：Thu Mar 06 15:21:58 CST 2025
+2025-03-06 15:21:58.774 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :37   [32m1897548193687801856[0;39m 1分钟以前：2025-03-06 15:20:58
+2025-03-06 15:21:58.776 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897548193687801856[0;39m ==>  Preparing: select count(*) from sms_code WHERE ( `use` = ? and mobile = ? and created_at > ? )
+2025-03-06 15:21:58.776 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897548193687801856[0;39m ==> Parameters: 0(String), 15074787523(String), 2025-03-06 15:20:58.774(Timestamp)
+2025-03-06 15:21:58.778 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897548193687801856[0;39m <==    Columns: count(*)
+2025-03-06 15:21:58.779 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897548193687801856[0;39m <==        Row: 0
+2025-03-06 15:21:58.779 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897548193687801856[0;39m <==      Total: 1
+2025-03-06 15:21:58.779 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897548193687801856[0;39m ==>  Preparing: insert into sms_code (id, mobile, code, `use`, `status`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?)
+2025-03-06 15:21:58.780 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897548193687801856[0;39m ==> Parameters: 1897548193717161984(Long), 15074787523(String), 463414(String), 0(String), 0(String), 2025-03-06 15:21:58.774(Timestamp), 2025-03-06 15:21:58.774(Timestamp)
+2025-03-06 15:21:58.787 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897548193687801856[0;39m <==    Updates: 1
+2025-03-06 15:21:58.788 INFO  cn.edu.szu.nls.business.util.SmsUtil              :61   [32m1897548193687801856[0;39m 发送验证码手机号：15074787523，验证码：463414，签名：阿里云短信测试，模板：SMS_309990134
+2025-03-06 15:21:59.030 INFO  cn.edu.szu.nls.business.util.SmsUtil              :98   [32m1897548193687801856[0;39m 短信发送结果：{"body":{"code":"isv.SMS_TEST_SIGN_TEMPLATE_LIMIT","message":"测试专用签名和模板必须结合使用","requestId":"5174BBC1-7CF3-542C-A868-4A823EFF0B31"},"headers":{"Keep-Alive":"timeout=25","Access-Control-Expose-Headers":"*","Access-Control-Allow-Origin":"*","ETag":"1Ts3/cmQghuTBPnxTLfor4Q2","x-acs-request-id":"5174BBC1-7CF3-542C-A868-4A823EFF0B31","Connection":"keep-alive","Content-Length":"152","Date":"Thu, 06 Mar 2025 07:21:57 GMT","Content-Type":"application/json;charset=utf-8","x-acs-trace-id":"1dac9022b2a29cda3e23ed1838cf9e76"},"statusCode":200}
+2025-03-06 15:21:59.030 ERROR cn.edu.szu.nls.business.util.SmsUtil              :112  [32m1897548193687801856[0;39m 短信发送异常
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 15:21:59.080 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897548193687801856[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 15:21:59.082 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897548193687801856[0;39m Resolved [BusinessException(exceptionEnum=SMS_CODE_SEND_ERROR)]
+2025-03-06 15:23:26.956 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :40   [32m1897548563558305792[0;39m ------------ Around method invoked ------------
+2025-03-06 15:23:26.957 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :49   [32m1897548563558305792[0;39m Request Address: /nls/web/sms-code/send-for-register POST
+2025-03-06 15:23:26.957 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :50   [32m1897548563558305792[0;39m Class And Function: cn.edu.szu.nls.business.controller.web.WebSmsCodeController.sendForRegister
+2025-03-06 15:23:26.957 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :51   [32m1897548563558305792[0;39m Remote Address: 127.0.0.1
+2025-03-06 15:23:26.957 INFO  cn.edu.szu.nls.business.aspect.LogAspect          :71   [32m1897548563558305792[0;39m Request Arguments: {"excludes":["cvv2","idCard"],"includes":[],"maxLevel":0}
+2025-03-06 15:23:26.958 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :36   [32m1897548563558305792[0;39m 当前时间：Thu Mar 06 15:23:26 CST 2025
+2025-03-06 15:23:26.958 INFO  cn.edu.szu.nls.business.service.SmsCodeService    :37   [32m1897548563558305792[0;39m 1分钟以前：2025-03-06 15:22:26
+2025-03-06 15:23:26.961 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897548563558305792[0;39m ==>  Preparing: select count(*) from sms_code WHERE ( `use` = ? and mobile = ? and created_at > ? )
+2025-03-06 15:23:26.963 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897548563558305792[0;39m ==> Parameters: 0(String), 15074787523(String), 2025-03-06 15:22:26.957(Timestamp)
+2025-03-06 15:23:26.965 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897548563558305792[0;39m <==    Columns: count(*)
+2025-03-06 15:23:26.965 TRACE c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :141  [32m1897548563558305792[0;39m <==        Row: 0
+2025-03-06 15:23:26.966 DEBUG c.e.s.n.b.mapper.SmsCodeMapper.countByExample     :135  [32m1897548563558305792[0;39m <==      Total: 1
+2025-03-06 15:23:26.966 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897548563558305792[0;39m ==>  Preparing: insert into sms_code (id, mobile, code, `use`, `status`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?)
+2025-03-06 15:23:26.967 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897548563558305792[0;39m ==> Parameters: 1897548563600248832(Long), 15074787523(String), 138003(String), 0(String), 0(String), 2025-03-06 15:23:26.957(Timestamp), 2025-03-06 15:23:26.957(Timestamp)
+2025-03-06 15:23:26.973 DEBUG c.edu.szu.nls.business.mapper.SmsCodeMapper.insert:135  [32m1897548563558305792[0;39m <==    Updates: 1
+2025-03-06 15:23:26.974 INFO  cn.edu.szu.nls.business.util.SmsUtil              :61   [32m1897548563558305792[0;39m 发送验证码手机号：15074787523，验证码：138003，签名：阿里云短信测试，模板：SMS_309990134
+2025-03-06 15:23:27.239 INFO  cn.edu.szu.nls.business.util.SmsUtil              :98   [32m1897548563558305792[0;39m 短信发送结果：{"body":{"code":"isv.SMS_TEST_SIGN_TEMPLATE_LIMIT","message":"测试专用签名和模板必须结合使用","requestId":"37D8EB3F-07A7-59A6-9240-A86560A0FADD"},"headers":{"Keep-Alive":"timeout=25","Access-Control-Expose-Headers":"*","Access-Control-Allow-Origin":"*","ETag":"1oh091IzIvJpmcemISC6LsQ2","x-acs-request-id":"37D8EB3F-07A7-59A6-9240-A86560A0FADD","Connection":"keep-alive","Content-Length":"152","Date":"Thu, 06 Mar 2025 07:23:25 GMT","Content-Type":"application/json;charset=utf-8","x-acs-trace-id":"7e2ddf364f5aea76ad67542daf1748ec"},"statusCode":200}
+2025-03-06 15:23:27.239 ERROR cn.edu.szu.nls.business.util.SmsUtil              :112  [32m1897548563558305792[0;39m 短信发送异常
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 15:23:27.287 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897548563558305792[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 15:23:27.291 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :254  [32m1897548563558305792[0;39m Resolved [BusinessException(exceptionEnum=SMS_CODE_SEND_ERROR)]
+2025-03-06 15:23:35.846 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :54   [32m                  [0;39m Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-06 15:23:36.469 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown     :76   [32m                  [0;39m Graceful shutdown complete
+2025-03-06 15:23:36.473 INFO  com.zaxxer.hikari.HikariDataSource                :349  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2025-03-06 15:23:36.487 INFO  com.zaxxer.hikari.HikariDataSource                :351  [32m                  [0;39m HikariPool-1 - Shutdown completed.

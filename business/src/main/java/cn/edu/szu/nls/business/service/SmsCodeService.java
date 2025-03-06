@@ -6,6 +6,7 @@ import cn.edu.szu.nls.business.enums.SmsCodeStatusEnum;
 import cn.edu.szu.nls.business.exception.BusinessException;
 import cn.edu.szu.nls.business.exception.BusinessExceptionEnum;
 import cn.edu.szu.nls.business.mapper.SmsCodeMapper;
+import cn.edu.szu.nls.business.util.SmsUtil;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;
@@ -49,5 +50,6 @@ public class SmsCodeService {
         smsCode.setUpdatedAt(now);
         smsCodeMapper.insert(smsCode);
         // 对接短信通道，发送短信
+        SmsUtil.sendCode(mobile, code);
     }
 }
