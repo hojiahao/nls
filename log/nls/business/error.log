@@ -671,3 +671,9 @@ Caused by: java.lang.ClassNotFoundException: cn.edu.szu.nls.business.service.Sms
 	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
 	... 32 common frames omitted
+2025-03-06 13:14:41.726 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897516161536561152[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 13:14:42.510 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897516164858449920[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
+2025-03-06 13:15:08.888 ERROR c.e.s.n.b.controller.ControllerExceptionHandler   :41   [32m1897516275495800832[0;39m 系统异常：
+cn.edu.szu.nls.business.exception.BusinessException: null
