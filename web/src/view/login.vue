@@ -2,7 +2,7 @@
   <div class="login">
     <a-row>
       <a-col class="main" :span="6" :offset="9">
-        <div class="title">NLS智能语音识别</div>
+        <div class="title">NLS智能语音</div>
         <a-form
             :model="loginMember"
             name="basic"
