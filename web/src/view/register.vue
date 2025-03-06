@@ -108,7 +108,7 @@ const register = values => {
   axios.post("/nls/web/member/register", {
     mobile: registerMember.value.mobile,
     code: registerMember.value.code,
-    password:registerMember.value.password
+    password: hexMd5Key(registerMember.value.password)
   }).then((response) => {
     let data = response.data;
     if (data.success) {
