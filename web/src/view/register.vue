@@ -20,6 +20,18 @@
             </a-input>
           </a-form-item>
 
+          <a-form-item name="imageCode" class="form-item"
+                       :rules="[{ required: true, message: '请输入图片验证码', trigger: 'blur' }]">
+            <a-input v-model:value="registerMember.imageCode" placeholder="图片验证码">
+              <template #prefix>
+                <SafetyOutlined style="margin-left: 15px"/>
+              </template>
+              <template #suffix>
+                <img v-show="!!imageCodeSrc" :src="imageCodeSrc" alt="验证码" v-on:click="loadImageCode()"/>
+              </template>
+            </a-input>
+          </a-form-item>
+
           <a-form-item
               name="code" class="form-item"
               :rules="[{ required: true, message: 'Please input your sms code!', trigger: 'blur'}]"
@@ -79,6 +91,7 @@ import {useRouter} from "vue-router";
 let router = useRouter()
 const registerMember = ref({
   mobile: '',
+  imageCode: '',
   code: '',
   password: '',
   passwordOrigin: '',
@@ -146,4 +159,17 @@ const sendRegisterSmsCode = () => {
     }
   })
 }
+
+// ----------- 图形验证码 --------------------
+const imageCodeToken = ref()
+const imageCodeSrc = ref()
+/**
+ * 加载图形验证码
+ */
+const loadImageCode = () => {
+  registerMember.value.imageCode = ""
+  imageCodeToken.value = Tool.uuid(8)
+  imageCodeSrc.value = import.meta.env.VITE_SERVER + '/nls/web/kaptcha/image-code/' + imageCodeToken.value
+}
+loadImageCode()
 </script>

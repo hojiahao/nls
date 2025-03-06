@@ -1,0 +1,4 @@
+GET http://localhost:8080/nls/web/kaptcha/image-code/123
+Accept: application/json
+
+###
