@@ -7,7 +7,6 @@
             :model="registerMember"
             name="basic"
             :wrapper-col="{ span: 24 }"
-            autocomplete="off"
             @finish="register"
         >
           <a-form-item
@@ -22,7 +21,7 @@
           </a-form-item>
 
           <a-form-item
-              name="mobile" class="form-item"
+              name="code" class="form-item"
               :rules="[{ required: true, message: 'Please input your sms code!' }]"
           >
             <a-input-search
@@ -39,7 +38,7 @@
           </a-form-item>
 
           <a-form-item
-              name="password" class="form-item"
+              name="passwordOrigin" class="form-item"
               :rules="[{ required: true, message: 'Please input your password!' }]"
           >
             <a-input-password v-model:value="registerMember.passwordOrigin" placeholder="密码" size="large">
@@ -50,7 +49,7 @@
           </a-form-item>
 
           <a-form-item
-              name="password" class="form-item"
+              name="passwordConfirmed" class="form-item"
               :rules="[{ required: true, message: 'Please confirm your password!' }]"
           >
             <a-input-password v-model:value="registerMember.passwordConfirmed" placeholder="确认密码" size="large">
@@ -65,10 +64,7 @@
           </a-form-item>
         </a-form>
         <p class="footer">
-          <router-link to="/login">
-            <ArrowLeftOutlined/>
-            返回登录
-          </router-link>
+          <router-link to="/login"><ArrowLeftOutlined/>返回登录</router-link>
         </p>
       </a-col>
     </a-row>
@@ -78,6 +74,7 @@
 import {ref} from 'vue';
 import axios from "axios";
 import {message} from "ant-design-vue";
+import router from "../router/index.js";
 
 const registerMember = ref({
   mobile: '',
@@ -89,6 +86,25 @@ const registerMember = ref({
 
 const register = values => {
   console.log('开始注册:', values);
+  if (registerMember.value.passwordOrigin !== registerMember.value.passwordConfirmed) {
+    message.error("密码和确认密码不一致！")
+    return;
+  }
+  registerMember.value.password = registerMember.value.passwordOrigin;
+  axios.post("/nls/web/member/register", {
+    mobile: registerMember.value.mobile,
+    code: registerMember.value.code,
+    password:registerMember.value.password
+  }).then((response) => {
+    let data = response.data;
+    if (data.success) {
+      message.success("注册成功！")
+      router.push("/login")
+    }
+    else {
+      message.error(data.msg);
+    }
+  })
 };
 
 // ----------- 短信验证码 --------------------
